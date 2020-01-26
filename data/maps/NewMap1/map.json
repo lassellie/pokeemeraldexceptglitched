@@ -1,0 +1,31 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_NEW_MAP1",
+    "layout": "LAYOUT_NEW_MAP1",
+    "map_type": "MAP_TYPE_UNUSED_1",
+    "music": "MUS_SPLENDALE",
+    "name": "NewMap1",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_SPLENDALE",
+    "requires_flash": false,
+    "show_map_name": true,
+    "warp_events": [
+        {
+            "dest_map": "MAP_PLAYER_HOUSE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 2,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

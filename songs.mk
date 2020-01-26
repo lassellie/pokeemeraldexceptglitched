@@ -2,6 +2,15 @@ STD_REVERB = 50
 
 $(MID_BUILDDIR)/%.o: $(MID_SUBDIR)/%.s
 	$(AS) $(ASFLAGS) -I sound -o $@ $<
+	
+$(MID_SUBDIR)/mus_splendale.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100
+
+$(MID_SUBDIR)/mus_route_1.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100
+
+$(MID_SUBDIR)/mus_winners.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090	
 
 $(MID_SUBDIR)/mus_ajito.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G076 -V084
@@ -11,7 +20,7 @@ $(MID_SUBDIR)/mus_aqa_0.s: %.s: %.mid
 
 $(MID_SUBDIR)/mus_ashroad.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G055 -V076
-
+	
 $(MID_SUBDIR)/mus_ayasii.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G069 -V078
 

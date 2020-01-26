@@ -59,6 +59,12 @@
 #define MAP_UNDERWATER5      (54 | (0 << 8))
 #define MAP_UNDERWATER6      (55 | (0 << 8))
 #define MAP_UNDERWATER7      (56 | (0 << 8))
+#define MAP_ROUTE1           (57 | (0 << 8))
+#define MAP_ROUTE3           (58 | (0 << 8))
+#define MAP_WATER_ROUTE      (59 | (0 << 8))
+#define MAP_MINING_CAVE      (60 | (0 << 8))
+#define MAP_BURROWSVILLE     (61 | (0 << 8))
+#define MAP_BURROWSVILLEUPER (62 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -587,6 +593,12 @@
 // Map Group 33
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
-#define MAP_GROUPS_COUNT 34
+// Map Group 34
+#define MAP_SPLENDALE    (0 | (34 << 8))
+#define MAP_POKEMON_LAB  (1 | (34 << 8))
+#define MAP_PLAYER_HOUSE (2 | (34 << 8))
+#define MAP_NEW_MAP1     (3 | (34 << 8))
+
+#define MAP_GROUPS_COUNT 35
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
