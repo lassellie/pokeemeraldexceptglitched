@@ -65,6 +65,7 @@
 #define MAP_MINING_CAVE      (60 | (0 << 8))
 #define MAP_BURROWSVILLE     (61 | (0 << 8))
 #define MAP_BURROWSVILLEUPER (62 | (0 << 8))
+#define MAP_MORPHON          (63 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

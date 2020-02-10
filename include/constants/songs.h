@@ -538,6 +538,7 @@
 #define MUS_SPLENDALE 610
 #define MUS_ROUTE_1 611
 #define MUS_WINNERS 612
+#define MUS_MINING_TUNNEL 613
 
 
 #define MUS_ROUTE_118 0x7FFF  // map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

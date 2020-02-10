@@ -10,7 +10,10 @@ $(MID_SUBDIR)/mus_route_1.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100
 
 $(MID_SUBDIR)/mus_winners.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V090
+
+$(MID_SUBDIR)/mus_mining_tunnel.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G194 -V090	
 
 $(MID_SUBDIR)/mus_ajito.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G076 -V084

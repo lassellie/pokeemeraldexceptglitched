@@ -1136,3 +1136,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/NewMap1/scripts.inc"
 
 	.include "data/maps/burrowsvilleuper/scripts.inc"
+
+	.include "data/maps/morphon/scripts.inc"
