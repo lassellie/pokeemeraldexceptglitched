@@ -22057,7 +22057,7 @@ voicegroup192::
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8677594
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86775A0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86775AC
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 86775B8
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_square_wave, 255, 0, 255, 165  @ 869D190
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86775C4
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86775D0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86775DC
@@ -22170,7 +22170,7 @@ voicegroup192::
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8677AE0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8677AEC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8677AF8
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 8677B04
+	voice_square_2 2, 0, 2, 0, 0  @ 867C160
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8677B10
 	voice_noise_alt 0, 0, 1, 0, 0  @ 8677B1C
 	
