@@ -11,7 +11,7 @@
     "id": "MAP_BURROWSVILLEUPER",
     "layout": "LAYOUT_BURROWSVILLEUPER",
     "map_type": "MAP_TYPE_UNUSED_1",
-    "music": "MUS_DAN02",
+    "music": "MUS_YVELD",
     "name": "burrowsvilleuper",
     "object_events": [
         {
@@ -38,7 +38,7 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 14,
-            "y": 10
+            "y": 12
         },
         {
             "elevation": 3,
@@ -128,14 +128,14 @@
             "dest_warp_id": 1,
             "elevation": 0,
             "x": 25,
-            "y": 25
+            "y": 24
         },
         {
             "dest_map": "MAP_BURROWSVILLE",
             "dest_warp_id": 3,
             "elevation": 0,
             "x": 9,
-            "y": 26
+            "y": 25
         },
         {
             "dest_map": "MAP_BURROWSVILLE",
@@ -145,5 +145,5 @@
             "y": 17
         }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_SNOW"
 }

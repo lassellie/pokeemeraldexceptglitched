@@ -215,7 +215,10 @@
 #define MAPSEC_NAVEL_ROCK2                  0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_SPLENDALE					0xD5
-#define MAPSEC_NONE                         0xD6
+#define MAPSEC_YVELD						0xD6
+#define MAPSEC_YVELD_MINE					0xD7
+#define MAPSEC_MINING_CAVE					0xD8
+#define MAPSEC_NONE                         0xD9
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
