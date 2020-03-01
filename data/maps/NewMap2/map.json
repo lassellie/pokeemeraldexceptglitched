@@ -1,0 +1,90 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": true,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_NEW_MAP2",
+    "layout": "LAYOUT_NEW_MAP2",
+    "map_type": "MAP_TYPE_UNUSED_1",
+    "music": "MUS_DAN02",
+    "name": "NewMap2",
+    "object_events": [
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_ROOFTOP_SALE_WOMAN",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 0,
+            "y": 3
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_MART_EMPLOYEE",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_BEAUTY",
+            "movement_range_x": 2,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 8,
+            "y": 3
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_CAMPER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 9,
+            "y": 7
+        }
+    ],
+    "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+    "requires_flash": false,
+    "show_map_name": true,
+    "warp_events": [
+        {
+            "dest_map": "MAP_BURROWSVILLEUPER",
+            "dest_warp_id": 4,
+            "elevation": 0,
+            "x": 2,
+            "y": 7
+        },
+        {
+            "dest_map": "MAP_BURROWSVILLEUPER",
+            "dest_warp_id": 4,
+            "elevation": 0,
+            "x": 3,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}
