@@ -24,8 +24,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 4,
-            "y": 17
+            "x": 6,
+            "y": 16
         },
         {
             "elevation": 3,
@@ -37,21 +37,21 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 19,
+            "x": 17,
             "y": 9
         },
         {
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_SCIENTIST_1",
-            "movement_range_x": 3,
-            "movement_range_y": 2,
+            "movement_range_x": 2,
+            "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 8,
-            "y": 6
+            "x": 5,
+            "y": 2
         },
         {
             "elevation": 3,
@@ -64,7 +64,7 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 11,
-            "y": 2
+            "y": 8
         }
     ],
     "region_map_section": "MAPSEC_SPLENDALE",
@@ -76,14 +76,14 @@
             "dest_warp_id": 3,
             "elevation": 0,
             "x": 9,
-            "y": 19
+            "y": 17
         },
         {
             "dest_map": "MAP_SPLENDALE",
             "dest_warp_id": 3,
             "elevation": 0,
             "x": 10,
-            "y": 19
+            "y": 17
         }
     ],
     "weather": "WEATHER_SUNNY"

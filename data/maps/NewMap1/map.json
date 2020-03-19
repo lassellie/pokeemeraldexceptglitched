@@ -17,14 +17,21 @@
     ],
     "region_map_section": "MAPSEC_SPLENDALE",
     "requires_flash": false,
-    "show_map_name": true,
+    "show_map_name": false,
     "warp_events": [
         {
             "dest_map": "MAP_PLAYER_HOUSE",
             "dest_warp_id": 2,
             "elevation": 0,
-            "x": 2,
-            "y": 7
+            "x": 3,
+            "y": 8
+        },
+        {
+            "dest_map": "MAP_PLAYER_HOUSE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 4,
+            "y": 8
         }
     ],
     "weather": "WEATHER_SUNNY"

@@ -12433,4 +12433,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .lvl = 5,
     .species = SPECIES_KYOGRE,
     }
+};	
+static const struct TrainerMonItemCustomMoves sParty_Kris[] = {
+    {
+    .iv = 100,
+    .lvl = 13,
+    .species = SPECIES_SNORUNT,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_POWDER_SNOW, MOVE_DOUBLE_TEAM, MOVE_BITE, MOVE_HAIL}
+    },
+    {
+    .iv = 100,
+    .lvl = 13,
+    .species = SPECIES_SPHEAL,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_WATER_GUN, MOVE_DEFENSE_CURL, MOVE_ENCORE, MOVE_ICE_BALL}
+    },
+    {
+    .iv = 200,
+    .lvl = 16,
+    .species = SPECIES_SNEASEL,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_ICE_BEAM}
+    }
 };

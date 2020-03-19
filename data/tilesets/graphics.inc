@@ -1729,3 +1729,63 @@ gTilesetPalettes_UnionRoom:: @ 8395678
 	.align 2
 gTilesetTiles_UnionRoom:: @ 8395878
 	.incbin "data/tilesets/secondary/union_room/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_snowset::
+	.incbin "data/tilesets/secondary/snowset/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/snowset/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_snowset::
+	.incbin "data/tilesets/secondary/snowset/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_mainplanet::
+	.incbin "data/tilesets/primary/mainplanet/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/mainplanet/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_mainplanet::
+	.incbin "data/tilesets/primary/mainplanet/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_redonemainplanet::
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/redonemainplanet/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_redonemainplanet::
+	.incbin "data/tilesets/primary/redonemainplanet/tiles.4bpp.lz"

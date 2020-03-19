@@ -6276,7 +6276,7 @@ u16 GetBattleBGM(void)
         }
     }
     else
-        return MUS_BATTLE27;
+        return MUS_WILD;
 }
 
 void PlayBattleBGM(void)
@@ -6288,7 +6288,7 @@ void PlayBattleBGM(void)
 
 void PlayMapChosenOrBattleBGM(u16 songId)
 {
-    ResetMapMusic();
+    //ResetMapMusic();
     m4aMPlayAllStop();
     if (songId)
         PlayNewMapMusic(songId);

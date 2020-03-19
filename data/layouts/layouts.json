@@ -4437,7 +4437,7 @@
             "id": "LAYOUT_ROUTE3",
             "name": "Route3_Layout",
             "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Slateport",
+            "secondary_tileset": "gTileset_Petalburg",
             "width": 20
         },
         {
@@ -4447,18 +4447,18 @@
             "id": "LAYOUT_POKEMON_LAB",
             "name": "PokemonLab_Layout",
             "primary_tileset": "gTileset_Building",
-            "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 20
+            "secondary_tileset": "gTileset_Lab",
+            "width": 18
         },
         {
             "blockdata_filepath": "data/layouts/PlayerHouse/map.bin",
             "border_filepath": "data/layouts/PlayerHouse/border.bin",
-            "height": 15,
+            "height": 12,
             "id": "LAYOUT_PLAYER_HOUSE",
             "name": "PlayerHouse_Layout",
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 15
+            "width": 13
         },
         {
             "blockdata_filepath": "data/layouts/WaterRoute/map.bin",
@@ -4493,12 +4493,12 @@
         {
             "blockdata_filepath": "data/layouts/NewMap1/map.bin",
             "border_filepath": "data/layouts/NewMap1/border.bin",
-            "height": 8,
+            "height": 9,
             "id": "LAYOUT_NEW_MAP1",
             "name": "NewMap1_Layout",
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
-            "width": 5
+            "width": 8
         },
         {
             "blockdata_filepath": "data/layouts/burrowsvilleuper/map.bin",
@@ -4519,6 +4519,76 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_GenericBuilding",
             "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/snowroute/map.bin",
+            "border_filepath": "data/layouts/snowroute/border.bin",
+            "height": 20,
+            "id": "LAYOUT_SNOWROUTE",
+            "name": "snowroute_Layout",
+            "primary_tileset": "gTileset_mainplanet",
+            "secondary_tileset": "gTileset_Cave",
+            "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/firstcitypkmncenter/map.bin",
+            "border_filepath": "data/layouts/firstcitypkmncenter/border.bin",
+            "height": 9,
+            "id": "LAYOUT_FIRSTCITYPKMNCENTER",
+            "name": "firstcitypkmncenter_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_PokemonCenter",
+            "width": 16
+        },
+        {
+            "blockdata_filepath": "data/layouts/NewMap2/map.bin",
+            "border_filepath": "data/layouts/NewMap2/border.bin",
+            "height": 8,
+            "id": "LAYOUT_NEW_MAP2",
+            "name": "NewMap2_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Shop",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/NewMap3/map.bin",
+            "border_filepath": "data/layouts/NewMap3/border.bin",
+            "height": 22,
+            "id": "LAYOUT_NEW_MAP3",
+            "name": "NewMap3_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_snowset",
+            "width": 30
+        },
+        {
+            "blockdata_filepath": "data/layouts/yveldhouse/map.bin",
+            "border_filepath": "data/layouts/yveldhouse/border.bin",
+            "height": 12,
+            "id": "LAYOUT_YVELDHOUSE",
+            "name": "yveldhouse_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/yveldhouse2/map.bin",
+            "border_filepath": "data/layouts/yveldhouse2/border.bin",
+            "height": 14,
+            "id": "LAYOUT_YVELDHOUSE2",
+            "name": "yveldhouse2_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/NewMap4/map.bin",
+            "border_filepath": "data/layouts/NewMap4/border.bin",
+            "height": 20,
+            "id": "LAYOUT_NEW_MAP4",
+            "name": "NewMap4_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 20
         }
     ],
     "layouts_table_label": "gMapLayouts"

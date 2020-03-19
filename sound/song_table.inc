@@ -616,6 +616,7 @@ gSongTable:: @ 86B49F0
 	song mus_winners, 0, 0
 	song mus_mining_tunnel, 0, 0
 	song mus_yveld, 0, 0
+	song mus_wild, 0, 0
 	.align 2
 dummy_song_header: @ 86B5D00
 	.byte 0, 0, 0, 0

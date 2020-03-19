@@ -5,7 +5,13 @@
     "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
     "bg_events": [
     ],
-    "connections": null,
+    "connections": [
+        {
+            "direction": "right",
+            "map": "MAP_SNOWROUTE",
+            "offset": 10
+        }
+    ],
     "coord_events": [
     ],
     "id": "MAP_BURROWSVILLEUPER",
@@ -19,26 +25,26 @@
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_ARTIST",
             "movement_range_x": 2,
-            "movement_range_y": 5,
+            "movement_range_y": 3,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 7,
-            "y": 15
+            "x": 9,
+            "y": 19
         },
         {
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_BEAUTY",
-            "movement_range_x": 0,
-            "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+            "movement_range_x": 2,
+            "movement_range_y": 3,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 14,
-            "y": 12
+            "x": 15,
+            "y": 14
         },
         {
             "elevation": 3,
@@ -51,7 +57,7 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 26,
-            "y": 13
+            "y": 16
         },
         {
             "elevation": 3,
@@ -63,8 +69,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 16,
-            "y": 26
+            "x": 4,
+            "y": 23
         },
         {
             "elevation": 3,
@@ -76,21 +82,21 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 16,
-            "y": 25
+            "x": 4,
+            "y": 22
         },
         {
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_HIKER",
-            "movement_range_x": 2,
-            "movement_range_y": 1,
+            "movement_range_x": 3,
+            "movement_range_y": 4,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 18,
-            "y": 19
+            "x": 20,
+            "y": 22
         },
         {
             "elevation": 3,
@@ -115,11 +121,37 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 20,
+            "x": 23,
             "y": 24
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_HIKER",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 10,
+            "y": 7
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
+            "movement_range_x": 2,
+            "movement_range_y": 1,
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 16,
+            "y": 5
         }
     ],
-    "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+    "region_map_section": "MAPSEC_YVELD",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
@@ -141,8 +173,50 @@
             "dest_map": "MAP_BURROWSVILLE",
             "dest_warp_id": 2,
             "elevation": 0,
-            "x": 3,
+            "x": 4,
             "y": 17
+        },
+        {
+            "dest_map": "MAP_FIRSTCITYPKMNCENTER",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 24,
+            "y": 11
+        },
+        {
+            "dest_map": "MAP_NEW_MAP2",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 7,
+            "y": 10
+        },
+        {
+            "dest_map": "MAP_NEW_MAP3",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 16,
+            "y": 10
+        },
+        {
+            "dest_map": "MAP_NEW_MAP4",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 21,
+            "y": 4
+        },
+        {
+            "dest_map": "MAP_YVELDHOUSE",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 15,
+            "y": 24
+        },
+        {
+            "dest_map": "MAP_YVELDHOUSE2",
+            "dest_warp_id": 0,
+            "elevation": 0,
+            "x": 10,
+            "y": 16
         }
     ],
     "weather": "WEATHER_SNOW"

@@ -1138,3 +1138,17 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/burrowsvilleuper/scripts.inc"
 
 	.include "data/maps/morphon/scripts.inc"
+
+	.include "data/maps/snowroute/scripts.inc"
+
+	.include "data/maps/firstcitypkmncenter/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/NewMap3/scripts.inc"
+
+	.include "data/maps/yveldhouse/scripts.inc"
+
+	.include "data/maps/yveldhouse2/scripts.inc"
+
+	.include "data/maps/NewMap4/scripts.inc"

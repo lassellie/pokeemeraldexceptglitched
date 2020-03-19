@@ -557,3 +557,25 @@ gMetatiles_UnionRoom:: @ 83DF392
 	.align 1
 gMetatileAttributes_UnionRoom:: @ 83DF6A2
 	.incbin "data/tilesets/secondary/union_room/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_snowset::
+	.incbin "data/tilesets/secondary/snowset/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_snowset::
+	.incbin "data/tilesets/secondary/snowset/metatile_attributes.bin"
+	.align 1
+gMetatiles_mainplanet::
+	.incbin "data/tilesets/primary/mainplanet/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_mainplanet::
+	.incbin "data/tilesets/primary/mainplanet/metatile_attributes.bin"
+	.align 1
+gMetatiles_redonemainplanet::
+	.incbin "data/tilesets/primary/redonemainplanet/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_redonemainplanet::
+	.incbin "data/tilesets/primary/redonemainplanet/metatile_attributes.bin"

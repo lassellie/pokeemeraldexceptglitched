@@ -244,6 +244,7 @@ const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Storyteller;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Giddy;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedMauvilleOldMan1;
 const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_UnusedMauvilleOldMan2;
+const struct EventObjectGraphicsInfo gEventObjectGraphicsInfo_Kris;
 
 
 const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] = {
@@ -373,7 +374,6 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_GLACIA] =                   &gEventObjectGraphicsInfo_Glacia,
     [EVENT_OBJ_GFX_DRAKE] =                    &gEventObjectGraphicsInfo_Drake,
     [EVENT_OBJ_GFX_ROXANNE] =                  &gEventObjectGraphicsInfo_Roxanne,
-    [EVENT_OBJ_GFX_BRAWLY] =                   &gEventObjectGraphicsInfo_Brawly,
     [EVENT_OBJ_GFX_WATTSON] =                  &gEventObjectGraphicsInfo_Wattson,
     [EVENT_OBJ_GFX_FLANNERY] =                 &gEventObjectGraphicsInfo_Flannery,
     [EVENT_OBJ_GFX_NORMAN] =                   &gEventObjectGraphicsInfo_Norman,
@@ -486,6 +486,7 @@ const struct EventObjectGraphicsInfo *const gEventObjectGraphicsInfoPointers[] =
     [EVENT_OBJ_GFX_LINK_RS_MAY] =              &gEventObjectGraphicsInfo_RubySapphireMay,
     [EVENT_OBJ_GFX_LUGIA] =                    &gEventObjectGraphicsInfo_Lugia,
     [EVENT_OBJ_GFX_HOOH] =                     &gEventObjectGraphicsInfo_HoOh,
+	[EVENT_OBJ_GFX_KRIS] =                     &gEventObjectGraphicsInfo_Kris,
 };
 
 const struct EventObjectGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

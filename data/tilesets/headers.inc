@@ -830,3 +830,36 @@ gTileset_UnionRoom:: @ 83DFDFC
 	.4byte gMetatiles_UnionRoom
 	.4byte gMetatileAttributes_UnionRoom
 	.4byte NULL @ animation callback
+
+	.align 2
+gTileset_snowset::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_snowset
+	.4byte gTilesetPalettes_snowset
+	.4byte gMetatiles_snowset
+	.4byte gMetatileAttributes_snowset
+	.4byte NULL
+
+	.align 2
+gTileset_mainplanet::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_mainplanet
+	.4byte gTilesetPalettes_mainplanet
+	.4byte gMetatiles_mainplanet
+	.4byte gMetatileAttributes_mainplanet
+	.4byte NULL
+
+	.align 2
+gTileset_redonemainplanet::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_redonemainplanet
+	.4byte gTilesetPalettes_redonemainplanet
+	.4byte gMetatiles_redonemainplanet
+	.4byte gMetatileAttributes_redonemainplanet
+	.4byte NULL
