@@ -4423,12 +4423,12 @@
         {
             "blockdata_filepath": "data/layouts/Route1/map.bin",
             "border_filepath": "data/layouts/Route1/border.bin",
-            "height": 15,
+            "height": 16,
             "id": "LAYOUT_ROUTE1",
             "name": "Route1_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Petalburg",
-            "width": 52
+            "width": 55
         },
         {
             "blockdata_filepath": "data/layouts/Route3/map.bin",
@@ -4473,12 +4473,12 @@
         {
             "blockdata_filepath": "data/layouts/MiningCave/map.bin",
             "border_filepath": "data/layouts/MiningCave/border.bin",
-            "height": 10,
+            "height": 12,
             "id": "LAYOUT_MINING_CAVE",
             "name": "MiningCave_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_MeteorFalls",
-            "width": 50
+            "width": 58
         },
         {
             "blockdata_filepath": "data/layouts/Burrowsville/map.bin",

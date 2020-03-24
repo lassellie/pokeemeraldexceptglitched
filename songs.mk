@@ -21,6 +21,9 @@ $(MID_SUBDIR)/mus_yveld.s: %.s: %.mid
 $(MID_SUBDIR)/mus_wild.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G196 -V090
 
+$(MID_SUBDIR)/mus_lab.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G197 -V090	
+
 $(MID_SUBDIR)/mus_ajito.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G076 -V084
 

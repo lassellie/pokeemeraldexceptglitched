@@ -11,7 +11,7 @@
     "id": "MAP_POKEMON_LAB",
     "layout": "LAYOUT_POKEMON_LAB",
     "map_type": "MAP_TYPE_UNUSED_1",
-    "music": "MUS_FINECITY",
+    "music": "MUS_LAB",
     "name": "PokemonLab",
     "object_events": [
         {
