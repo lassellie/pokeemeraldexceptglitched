@@ -73,6 +73,7 @@
 #define MAP_YVELDHOUSE          (68 | (0 << 8))
 #define MAP_YVELDHOUSE2         (69 | (0 << 8))
 #define MAP_NEW_MAP4            (70 | (0 << 8))
+#define MAP_YVELDSPRING         (71 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

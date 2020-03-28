@@ -1152,3 +1152,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/yveldhouse2/scripts.inc"
 
 	.include "data/maps/NewMap4/scripts.inc"
+
+	.include "data/maps/yveldspring/scripts.inc"
