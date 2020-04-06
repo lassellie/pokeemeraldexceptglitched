@@ -2319,3 +2319,10 @@ const u8 gDeoxysPokedexText[] = _(
     "extraterrestrial virus exposed to a laser\n"
     "beam. Its body is configured for superior\n"
     "agility and speed.");
+
+	const u8 gGraithPokedexText[] = _(
+    "It is unknown what the diet of this\n"
+    "POKéMON consists of.  It is often\n"
+    "kept for its scent, which is\n"
+    "comparable to the smell of lavender.");
+

@@ -542,6 +542,7 @@
 #define MUS_YVELD 614
 #define MUS_WILD 615
 #define MUS_LAB 616
+#define MUS_CENTER 617
 
 
 #define MUS_ROUTE_118 0x7FFF  // map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

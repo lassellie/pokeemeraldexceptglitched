@@ -9384,5 +9384,23 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM48_SKILL_SWAP)
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
+										
+	 [SPECIES_GRAITH]     = TMHM_LEARNSET(TMHM(TM06_TOXIC)
+                                        
+                                        | TMHM(TM09_BULLET_SEED)
+                                        | TMHM(TM10_HIDDEN_POWER)
+                                        | TMHM(TM11_SUNNY_DAY)
+                                        | TMHM(TM16_LIGHT_SCREEN)
+                                        | TMHM(TM17_PROTECT)
+                                        | TMHM(TM19_GIGA_DRAIN)
+                                        | TMHM(TM20_SAFEGUARD)
+                                        | TMHM(TM21_FRUSTRATION)
+                                        | TMHM(TM22_SOLARBEAM)
+                                        | TMHM(TM27_RETURN)
+                                        | TMHM(TM33_REFLECT)
+                                        | TMHM(TM36_SLUDGE_BOMB)
+                                        | TMHM(TM43_SECRET_POWER)
+                                        | TMHM(HM01_CUT)
+                                        | TMHM(HM05_FLASH)),
 
 };

@@ -11,7 +11,7 @@
     "id": "MAP_FIRSTCITYPKMNCENTER",
     "layout": "LAYOUT_FIRSTCITYPKMNCENTER",
     "map_type": "MAP_TYPE_UNUSED_1",
-    "music": "MUS_DAN02",
+    "music": "MUS_CENTER",
     "name": "firstcitypkmncenter",
     "object_events": [
         {

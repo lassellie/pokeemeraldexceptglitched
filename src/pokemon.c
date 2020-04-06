@@ -491,6 +491,7 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
     SPECIES_TO_HOENN(LATIOS),
     SPECIES_TO_HOENN(JIRACHI),
     SPECIES_TO_HOENN(DEOXYS),
+	SPECIES_TO_HOENN(GRAITH),
     SPECIES_TO_HOENN(CHIMECHO),
 };
 
@@ -906,6 +907,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
     SPECIES_TO_NATIONAL(LATIOS),
     SPECIES_TO_NATIONAL(JIRACHI),
     SPECIES_TO_NATIONAL(DEOXYS),
+	SPECIES_TO_NATIONAL(GRAITH),
     SPECIES_TO_NATIONAL(CHIMECHO),
 };
 
@@ -1113,6 +1115,7 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
     HOENN_TO_NATIONAL(RAYQUAZA),
     HOENN_TO_NATIONAL(JIRACHI),
     HOENN_TO_NATIONAL(DEOXYS),
+	HOENN_TO_NATIONAL(GRAITH),
     HOENN_TO_NATIONAL(BULBASAUR), // Pokémon from here onwards are UNSEEN in the HoennDex.
     HOENN_TO_NATIONAL(IVYSAUR),
     HOENN_TO_NATIONAL(VENUSAUR),
@@ -1787,6 +1790,7 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_LATIOS - 1] = 0x10,
     [SPECIES_JIRACHI - 1] = 0x0d,
     [SPECIES_DEOXYS - 1] = 0x1b,
+	[SPECIES_GRAITH - 1] = 0x00,
     [SPECIES_CHIMECHO - 1] = 0x1d,
 };
 
@@ -6764,7 +6768,8 @@ bool8 HasTwoFramesAnimation(u16 species)
     return (species != SPECIES_CASTFORM
             && species != SPECIES_DEOXYS
             && species != SPECIES_SPINDA
-            && species != SPECIES_UNOWN);
+            && species != SPECIES_UNOWN
+			&& species != SPECIES_GRAITH);
 }
 
 bool8 sub_806F104(void)

@@ -4643,4 +4643,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+
+	[NATIONAL_DEX_GRAITH] =
+    {
+        .categoryName = _("GHOST BUNNY"),
+        .height = 2,
+        .weight = 5,
+        .description = gGraithPokedexText,
+        .pokemonScale = 541,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

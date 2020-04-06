@@ -2714,6 +2714,13 @@ const u8 gMonFootprint_Chimecho[] = INCBIN_U8("graphics/pokemon/chimecho/footpri
 const u32 gMonStillFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/front.4bpp.lz");
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 
+const u32 gMonStillFrontPic_Graith[] = INCBIN_U32("graphics/pokemon/graith/front.4bpp.lz");
+const u32 gMonPalette_Graith[] = INCBIN_U32("graphics/pokemon/graith/normal.gbapal.lz");
+const u32 gMonBackPic_Graith[] = INCBIN_U32("graphics/pokemon/graith/back.4bpp.lz");
+const u32 gMonShinyPalette_Graith[] = INCBIN_U32("graphics/pokemon/graith/shiny.gbapal.lz");
+const u8 gMonIcon_Graith[] = INCBIN_U8("graphics/pokemon/graith/icon.4bpp");
+const u8 gMonFootprint_Graith[] = INCBIN_U8("graphics/pokemon/graith/footprint.1bpp");
+
 const u32 gMonStillFrontPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/front_b.4bpp.lz");
 const u32 gMonBackPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/back_b.4bpp.lz");
 const u8 gMonIcon_UnownB[] = INCBIN_U8("graphics/pokemon/unown/icon_b.4bpp");

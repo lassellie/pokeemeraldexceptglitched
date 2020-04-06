@@ -702,6 +702,7 @@ SECTIONS {
 	sound/songs/midi/mus_yveld.o(.rodata);
 	sound/songs/midi/mus_wild.o(.rodata);
 	sound/songs/midi/mus_lab.o(.rodata);
+	sound/songs/midi/mus_center.o(.rodata);
         sound/songs/midi/se_kaifuku.o(.rodata);
         sound/songs/midi/se_pc_login.o(.rodata);
         sound/songs/midi/se_pc_off.o(.rodata);

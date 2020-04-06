@@ -2182,3 +2182,7 @@ DirectSoundWaveData_sc88_closed_triangle::
 DirectSoundWaveData_sc88_open_triangle::
 	.incbin "sound/direct_sound_samples/sc88_open_triangle.bin"
 	
+	.align 2
+Cry_Graith::
+	.incbin "sound/direct_sound_samples/cry_graith.bin"
+	

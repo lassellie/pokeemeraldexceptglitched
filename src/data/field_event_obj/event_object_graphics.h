@@ -4,6 +4,7 @@ const u16 gEventObjectPalette8[] = INCBIN_U16("graphics/event_objects/palettes/f
 const u32 gEventObjectPic_RubySapphireBrendanNormal[] = INCBIN_U32("graphics/event_objects/pics/people/ruby_sapphire_brendan/walking.4bpp");
 const u32 gEventObjectPic_RubySapphireBrendanRunning[] = INCBIN_U32("graphics/event_objects/pics/people/ruby_sapphire_brendan/running.4bpp");
 const u16 gEventObjectPalette33[] = INCBIN_U16("graphics/event_objects/palettes/field_object_palette_33.gbapal");
+const u16 gEventObjectPalette35[] = INCBIN_U16("graphics/event_objects/palettes/field_object_palette_35.gbapal");
 const u16 NullPalette_8499A38[16] = {};
 const u16 NullPalette_8499A58[16] = {};
 const u16 NullPalette_8499A78[16] = {};
