@@ -4599,6 +4599,16 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Lavaridge",
             "width": 15
+        },
+        {
+            "blockdata_filepath": "data/layouts/NewMap5/map.bin",
+            "border_filepath": "data/layouts/NewMap5/border.bin",
+            "height": 15,
+            "id": "LAYOUT_NEW_MAP5",
+            "name": "NewMap5_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Lab",
+            "width": 20
         }
     ],
     "layouts_table_label": "gMapLayouts"

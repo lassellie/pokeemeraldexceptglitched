@@ -607,6 +607,7 @@
 #define MAP_POKEMON_LAB  (1 | (34 << 8))
 #define MAP_PLAYER_HOUSE (2 | (34 << 8))
 #define MAP_NEW_MAP1     (3 | (34 << 8))
+#define MAP_NEW_MAP5     (4 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 
