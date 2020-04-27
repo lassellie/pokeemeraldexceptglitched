@@ -2721,6 +2721,20 @@ const u32 gMonShinyPalette_Graith[] = INCBIN_U32("graphics/pokemon/graith/shiny.
 const u8 gMonIcon_Graith[] = INCBIN_U8("graphics/pokemon/graith/icon.4bpp");
 const u8 gMonFootprint_Graith[] = INCBIN_U8("graphics/pokemon/graith/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Empish[] = INCBIN_U32("graphics/pokemon/empish/front.4bpp.lz");
+const u32 gMonPalette_Empish[] = INCBIN_U32("graphics/pokemon/empish/normal.gbapal.lz");
+const u32 gMonBackPic_Empish[] = INCBIN_U32("graphics/pokemon/empish/back.4bpp.lz");
+const u32 gMonShinyPalette_Empish[] = INCBIN_U32("graphics/pokemon/empish/shiny.gbapal.lz");
+const u8 gMonIcon_Empish[] = INCBIN_U8("graphics/pokemon/empish/icon.4bpp");
+const u8 gMonFootprint_Empish[] = INCBIN_U8("graphics/pokemon/empish/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Slarck[] = INCBIN_U32("graphics/pokemon/slarck/front.4bpp.lz");
+const u32 gMonPalette_Slarck[] = INCBIN_U32("graphics/pokemon/slarck/normal.gbapal.lz");
+const u32 gMonBackPic_Slarck[] = INCBIN_U32("graphics/pokemon/slarck/back.4bpp.lz");
+const u32 gMonShinyPalette_Slarck[] = INCBIN_U32("graphics/pokemon/slarck/shiny.gbapal.lz");
+const u8 gMonIcon_Slarck[] = INCBIN_U8("graphics/pokemon/slarck/icon.4bpp");
+const u8 gMonFootprint_Slarck[] = INCBIN_U8("graphics/pokemon/slarck/footprint.1bpp");
+
 const u32 gMonStillFrontPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/front_b.4bpp.lz");
 const u32 gMonBackPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/back_b.4bpp.lz");
 const u8 gMonIcon_UnownB[] = INCBIN_U8("graphics/pokemon/unown/icon_b.4bpp");

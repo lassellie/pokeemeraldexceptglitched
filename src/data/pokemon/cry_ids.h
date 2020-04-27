@@ -136,4 +136,6 @@ const u16 gSpeciesIdToCryId[] =
     [SPECIES_DEOXYS - 277] = 386,
     [SPECIES_CHIMECHO - 277] = 387,
 	[SPECIES_GRAITH - 277] = 388,
+	[SPECIES_EMPISH - 277] = 389,
+	[SPECIES_SLARCK - 277] = 390,
 };

@@ -1313,6 +1313,23 @@ const u16 gEggMoves[] = {
               MOVE_NATURE_POWER,
               MOVE_CURSE,
               MOVE_VINE_WHIP),
+			  
+	egg_moves(EMPISH,
+              MOVE_DOUBLE_EDGE,
+              MOVE_ANCIENT_POWER,
+              MOVE_UPROAR,
+              MOVE_FAKE_OUT,
+              MOVE_KNOCK_OFF,
+              MOVE_ASTONISH),
+			  
+	egg_moves(SLARCK,
+              MOVE_WATER_GUN,
+              MOVE_DETECT,
+              MOVE_REFLECT,
+              MOVE_LIGHT_SCREEN,
+              MOVE_ACID_ARMOR,
+              MOVE_SWIFT,
+			  MOVE_DEFENSE_CURL),
 
     EGG_MOVES_TERMINATOR
 };

@@ -2186,3 +2186,11 @@ DirectSoundWaveData_sc88_open_triangle::
 Cry_Graith::
 	.incbin "sound/direct_sound_samples/cry_graith.bin"
 	
+	.align 2
+Cry_Empish::
+	.incbin "sound/direct_sound_samples/cry_empish.bin"
+	
+	.align 2
+Cry_Slarck::
+	.incbin "sound/direct_sound_samples/cry_slarck.bin"
+	

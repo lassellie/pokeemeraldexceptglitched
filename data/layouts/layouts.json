@@ -4593,12 +4593,12 @@
         {
             "blockdata_filepath": "data/layouts/yveldspring/map.bin",
             "border_filepath": "data/layouts/yveldspring/border.bin",
-            "height": 20,
+            "height": 21,
             "id": "LAYOUT_YVELDSPRING",
             "name": "yveldspring_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Lavaridge",
-            "width": 15
+            "width": 17
         },
         {
             "blockdata_filepath": "data/layouts/NewMap5/map.bin",

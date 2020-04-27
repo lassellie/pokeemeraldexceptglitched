@@ -25,7 +25,7 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 6,
-            "y": 5
+            "y": 4
         },
         {
             "elevation": 3,
@@ -38,12 +38,12 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 3,
-            "y": 6
+            "y": 5
         },
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_SKITTY",
+            "graphics_id": "EVENT_OBJ_GFX_AZUMARILL",
             "movement_range_x": 1,
             "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -51,7 +51,7 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 9,
-            "y": 4
+            "y": 5
         }
     ],
     "region_map_section": "MAPSEC_YVELD",
@@ -63,14 +63,14 @@
             "dest_warp_id": 7,
             "elevation": 0,
             "x": 4,
-            "y": 11
+            "y": 10
         },
         {
             "dest_map": "MAP_BURROWSVILLEUPER",
             "dest_warp_id": 7,
             "elevation": 0,
             "x": 5,
-            "y": 11
+            "y": 10
         }
     ],
     "weather": "WEATHER_SUNNY"

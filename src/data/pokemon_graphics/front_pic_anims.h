@@ -4588,6 +4588,26 @@ static const union AnimCmd sAnim_GRAITH_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_EMPISH_1[] =
+{
+    ANIMCMD_FRAME(0, 18),
+    ANIMCMD_FRAME(1, 12),
+	ANIMCMD_FRAME(0, 18),
+    ANIMCMD_FRAME(1, 12),
+	ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_SLARCK_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+	ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+	ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_EGG_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -6818,6 +6838,18 @@ static const union AnimCmd *const sAnims_GRAITH[] ={
     sAnim_GRAITH_1,
 };
 
+static const union AnimCmd *const sAnims_EMPISH[] ={
+    sAnim_GeneralFrame0,
+    sAnim_EMPISH_1,
+	sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_SLARCK[] ={
+    sAnim_GeneralFrame0,
+    sAnim_SLARCK_1,
+	sAnim_GeneralFrame0,
+};
+
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
     sAnim_EGG_1,
@@ -7376,6 +7408,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(DEOXYS),
     ANIM_CMD(CHIMECHO),
 	ANIM_CMD(GRAITH),
+	ANIM_CMD(EMPISH),
+	ANIM_CMD(SLARCK),
     ANIM_CMD(EGG),
     ANIM_CMD(UNOWN_B),
     ANIM_CMD(UNOWN_C),

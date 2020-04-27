@@ -11,7 +11,7 @@
     "id": "MAP_NEW_MAP2",
     "layout": "LAYOUT_NEW_MAP2",
     "map_type": "MAP_TYPE_UNUSED_1",
-    "music": "MUS_DAN02",
+    "music": "MUS_SHOP",
     "name": "NewMap2",
     "object_events": [
         {

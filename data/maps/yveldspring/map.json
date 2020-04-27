@@ -24,8 +24,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 1,
-            "y": 10
+            "x": 2,
+            "y": 13
         },
         {
             "elevation": 3,
@@ -37,21 +37,21 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 9,
-            "y": 18
+            "x": 11,
+            "y": 15
         },
         {
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_BEAUTY",
-            "movement_range_x": 3,
-            "movement_range_y": 2,
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 3,
-            "y": 16
+            "x": 8,
+            "y": 19
         },
         {
             "elevation": 3,
@@ -59,12 +59,12 @@
             "graphics_id": "EVENT_OBJ_GFX_BLACK_BELT",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 13,
-            "y": 6
+            "x": 9,
+            "y": 11
         },
         {
             "elevation": 3,
@@ -77,7 +77,7 @@
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
             "x": 7,
-            "y": 8
+            "y": 14
         },
         {
             "elevation": 3,
@@ -89,8 +89,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 13,
-            "y": 13
+            "x": 2,
+            "y": 18
         },
         {
             "elevation": 3,
@@ -102,8 +102,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 1,
-            "y": 8
+            "x": 2,
+            "y": 11
         },
         {
             "elevation": 3,
@@ -115,8 +115,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 3,
-            "y": 8
+            "x": 4,
+            "y": 11
         }
     ],
     "region_map_section": "MAPSEC_YVELD",
@@ -127,8 +127,8 @@
             "dest_map": "MAP_BURROWSVILLEUPER",
             "dest_warp_id": 10,
             "elevation": 0,
-            "x": 12,
-            "y": 5
+            "x": 11,
+            "y": 7
         }
     ],
     "weather": "WEATHER_SUNNY"

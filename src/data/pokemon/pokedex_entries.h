@@ -4655,4 +4655,26 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	[NATIONAL_DEX_EMPISH] =
+    {
+        .categoryName = _("PRANKSTER"),
+        .height = 3,
+        .weight = 7,
+        .description = gEmpishPokedexText,
+        .pokemonScale = 541,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+	[NATIONAL_DEX_SLARCK] =
+    {
+        .categoryName = _("SAILING"),
+        .height = 6,
+        .weight = 12,
+        .description = gSlarckPokedexText,
+        .pokemonScale = 541,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
 };

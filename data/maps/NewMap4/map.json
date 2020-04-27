@@ -37,14 +37,14 @@
             "dest_warp_id": 6,
             "elevation": 0,
             "x": 9,
-            "y": 15
+            "y": 14
         },
         {
             "dest_map": "MAP_BURROWSVILLEUPER",
             "dest_warp_id": 6,
             "elevation": 0,
             "x": 10,
-            "y": 15
+            "y": 14
         }
     ],
     "weather": "WEATHER_SUNNY"

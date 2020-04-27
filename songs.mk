@@ -26,6 +26,12 @@ $(MID_SUBDIR)/mus_lab.s: %.s: %.mid
 	
 $(MID_SUBDIR)/mus_center.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G198 -V090
+	
+$(MID_SUBDIR)/mus_shop.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G199 -V090
+	
+$(MID_SUBDIR)/mus_gym.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G200 -V090
 
 $(MID_SUBDIR)/mus_ajito.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G076 -V084

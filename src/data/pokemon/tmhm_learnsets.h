@@ -9402,5 +9402,29 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM43_SECRET_POWER)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
-
+										
+	[SPECIES_EMPISH]         = TMHM_LEARNSET(TMHM(TM11_SUNNY_DAY)
+                                        | TMHM(TM12_TAUNT)
+                                        | TMHM(TM27_RETURN)
+                                        | TMHM(TM35_FLAMETHROWER)
+                                        | TMHM(TM38_FIRE_BLAST)
+                                        | TMHM(TM41_TORMENT)
+                                        | TMHM(TM46_THIEF)
+                                        | TMHM(TM49_SNATCH)
+                                        | TMHM(TM50_OVERHEAT)
+                                        | TMHM(HM05_FLASH)),
+										
+	[SPECIES_SLARCK]         = TMHM_LEARNSET(TMHM(TM03_WATER_PULSE)
+                                        | TMHM(TM10_HIDDEN_POWER)
+                                        | TMHM(TM13_ICE_BEAM)
+                                        | TMHM(TM16_LIGHT_SCREEN)
+                                        | TMHM(TM17_PROTECT)
+                                        | TMHM(TM18_RAIN_DANCE)
+                                        | TMHM(TM27_RETURN)
+                                        | TMHM(TM33_REFLECT)
+                                        | TMHM(TM42_FACADE)
+                                        | TMHM(TM44_REST)
+                                        | TMHM(HM03_SURF)
+                                        | TMHM(HM07_WATERFALL)
+                                        | TMHM(HM08_DIVE)),
 };

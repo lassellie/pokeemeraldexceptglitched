@@ -2065,6 +2065,16 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x56,
         .y_offset = 0x0b,
     },
+	[SPECIES_EMPISH] =
+    {
+        .size = 0x56,
+        .y_offset = 0x0b,
+    },
+	[SPECIES_SLARCK] =
+    {
+        .size = 0x56,
+        .y_offset = 0x0b,
+    },
     [SPECIES_EGG] =
     {
         .size = 0x36,

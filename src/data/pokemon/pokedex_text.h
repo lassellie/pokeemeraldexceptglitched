@@ -2326,3 +2326,13 @@ const u8 gDeoxysPokedexText[] = _(
     "kept for its scent, which is\n"
     "comparable to the smell of lavender.");
 
+const u8 gEmpishPokedexText[] = _(
+    "This POKéMON is known for its\n"
+    "mischievious nature, which has lead\n"
+    "to many house fires when left unattended.");
+
+const u8 gSlarckPokedexText[] = _(
+    "SLARCK has been seen moving slowly\n"
+    "on the ocean floor.  Its diet consists\n"
+    "of mainly algae, although it will eat\n"
+	"anything that swims in front of it.");

@@ -264,6 +264,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_MEMORIAL_PILLAR]           = {0, 0, 1, 1, sMapName_MemorialPillar},
     [MAPSEC_METEOR_FALLS]              = {0, 3, 1, 1, sMapName_MeteorFalls},
     [MAPSEC_METEOR_FALLS2]             = {1, 2, 1, 1, sMapName_MeteorFalls},
+    [MAPSEC_MINING_CAVE]               = {0, 0, 1, 1, sMapName_MiningCave},
     [MAPSEC_MIRAGE_ISLAND]             = {17, 10, 1, 1, sMapName_MirageIsland},
     [MAPSEC_MIRAGE_TOWER]              = {8, 2, 1, 1, sMapName_MirageTower},
     [MAPSEC_MONEAN_CHAMBER]            = {0, 0, 1, 1, sMapName_MoneanChamber},
@@ -382,6 +383,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_SOOTOPOLIS_CITY]           = {21, 7, 1, 1, sMapName_SootopolisCity},
     [MAPSEC_SOUTHERN_ISLAND]           = {12, 14, 1, 1, sMapName_SouthernIsland},
     [MAPSEC_SPECIAL_AREA]              = {0, 0, 1, 1, sMapName_SpecialArea},
+    [MAPSEC_SPLENDALE]                 = {0, 0, 1, 1, sMapName_Splendale},
     [MAPSEC_S_S_ANNE]                  = {0, 0, 1, 1, sMapName_SSAnne},
     [MAPSEC_TANOBY_CHAMBERS]           = {0, 0, 1, 1, sMapName_TanobyChambers},
     [MAPSEC_TANOBY_KEY]                = {0, 0, 1, 1, sMapName_TanobyKey},
@@ -417,10 +419,8 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_WATER_LABYRINTH]           = {0, 0, 1, 1, sMapName_WaterLabyrinth},
     [MAPSEC_WATER_PATH]                = {0, 0, 1, 1, sMapName_WaterPath},
     [MAPSEC_WEEPTH_CHAMBER]            = {0, 0, 1, 1, sMapName_WeepthChamber},
-	[MAPSEC_SPLENDALE]            	   = {0, 0, 1, 1, sMapName_Splendale},
-	[MAPSEC_MINING_CAVE]            	   = {0, 0, 1, 1, sMapName_MiningCave},
-	[MAPSEC_YVELD]            	   = {0, 0, 1, 1, sMapName_Yveld},
-	[MAPSEC_YVELD_MINE]            	   = {0, 0, 1, 1, sMapName_YveldMine}
+    [MAPSEC_YVELD]                     = {0, 0, 1, 1, sMapName_Yveld},
+    [MAPSEC_YVELD_MINE]                = {0, 0, 1, 1, sMapName_YveldMine},
 };
 
 #endif // GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

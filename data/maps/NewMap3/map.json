@@ -11,7 +11,7 @@
     "id": "MAP_NEW_MAP3",
     "layout": "LAYOUT_NEW_MAP3",
     "map_type": "MAP_TYPE_UNUSED_1",
-    "music": "MUS_DAN02",
+    "music": "MUS_GYM",
     "name": "NewMap3",
     "object_events": [
         {
@@ -78,6 +78,19 @@
             "trainer_type": "0",
             "x": 14,
             "y": 4
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_MAN_2",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 13,
+            "y": 20
         }
     ],
     "region_map_section": "MAPSEC_YVELD",
