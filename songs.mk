@@ -32,6 +32,18 @@ $(MID_SUBDIR)/mus_shop.s: %.s: %.mid
 	
 $(MID_SUBDIR)/mus_gym.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G200 -V090
+	
+$(MID_SUBDIR)/mus_f_rival.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G201 -V090
+
+$(MID_SUBDIR)/mus_m_rival.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G201 -V090
+	
+$(MID_SUBDIR)/mus_rival_battle.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G202 -V090
+	
+$(MID_SUBDIR)/mus_gym_leader.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G203 -V090
 
 $(MID_SUBDIR)/mus_ajito.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G076 -V084

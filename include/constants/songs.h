@@ -545,6 +545,10 @@
 #define MUS_CENTER 617
 #define MUS_SHOP 618
 #define MUS_GYM 619
+#define MUS_F_RIVAL 620
+#define MUS_M_RIVAL 621
+#define MUS_RIVAL_BATTLE 622
+#define MUS_GYM_LEADER 623
 
 
 #define MUS_ROUTE_118 0x7FFF  // map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

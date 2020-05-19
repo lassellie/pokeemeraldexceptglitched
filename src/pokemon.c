@@ -1797,7 +1797,7 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_JIRACHI - 1] = 0x0d,
     [SPECIES_DEOXYS - 1] = 0x1b,
 	[SPECIES_GRAITH - 1] = 0x00,
-	[SPECIES_EMPISH - 1] = 0x00,
+	[SPECIES_EMPISH - 1] = 0x01,
 	[SPECIES_SLARCK - 1] = 0x2d,
     [SPECIES_CHIMECHO - 1] = 0x1d,
 };

@@ -71,7 +71,8 @@
         "yveldhouse",
         "yveldhouse2",
         "NewMap4",
-        "yveldspring"
+        "yveldspring",
+        "NewMap6"
     ],
     "gMapGroup1": [
         "LittlerootTown_BrendansHouse_1F",
@@ -541,7 +542,9 @@
         "PokemonLab",
         "PlayerHouse",
         "NewMap1",
-        "NewMap5"
+        "NewMap5",
+        "splendalehouse",
+        "splendalehouse2f"
     ],
     "gMapGroup4": [
         "LavaridgeTown_HerbShop",

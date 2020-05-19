@@ -73,14 +73,14 @@
     "warp_events": [
         {
             "dest_map": "MAP_SPLENDALE",
-            "dest_warp_id": 3,
+            "dest_warp_id": 2,
             "elevation": 0,
             "x": 9,
             "y": 17
         },
         {
             "dest_map": "MAP_SPLENDALE",
-            "dest_warp_id": 3,
+            "dest_warp_id": 2,
             "elevation": 0,
             "x": 10,
             "y": 17

@@ -2030,9 +2030,9 @@ voicegroup027:: @ 867B7A0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B848
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B854
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B860
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B86C
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B878
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B884
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 37, 165, 180, 127  @ 867C670
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 37, 165, 180, 127  @ 867C670
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 37, 165, 180, 127  @ 867C670
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B890
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B89C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B8A8
@@ -2045,9 +2045,9 @@ voicegroup027:: @ 867B7A0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B8FC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B908
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B914
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B920
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B92C
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B938
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 86999E0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 86999E0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 86999E0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B944
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B950
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B95C
@@ -2060,26 +2060,26 @@ voicegroup027:: @ 867B7A0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9B0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9BC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9C8
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9D4
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9E0
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9EC
+	voice_keysplit voicegroup006, KeySplitTable2  @ 867DF54
+	voice_keysplit voicegroup006, KeySplitTable2  @ 867DF54
+	voice_keysplit voicegroup006, KeySplitTable2  @ 867DF54
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867B9F8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA04
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA10
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA1C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA28
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA34
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA40
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA4C
+	voice_keysplit voicegroup007, KeySplitTable3  @ 8681950
+	voice_keysplit voicegroup007, KeySplitTable3  @ 8681950
+	voice_keysplit voicegroup007, KeySplitTable3  @ 8681950
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA58
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA64
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA70
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA7C
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA88
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BA94
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BAA0
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BAAC
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BAB8
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BAC4
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BAD0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BADC
@@ -2157,8 +2157,8 @@ voicegroup028:: @ 867BDA0
 	voice_square_1 0, 0, 0, 6, 0, 0  @ 867BE18
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BE24
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BE30
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BE3C
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BE48
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_xylophone, 255, 235, 0, 204  @ 8685F10
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_xylophone, 255, 235, 0, 204  @ 8685F10
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BE54
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BE60
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 255, 0, 255, 127  @ 867BE6C
@@ -2179,7 +2179,7 @@ voicegroup028:: @ 867BDA0
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BF20
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BF2C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BF38
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BF44
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_fretless_bass, 255, 253, 0, 188  @ 868BA18
 	voice_directsound 60, 0, DirectSoundWaveData_jv1080_slap_bass, 255, 235, 128, 99  @ 867BF50
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BF5C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 867BF68
@@ -4839,7 +4839,7 @@ voicegroup053:: @ 8683648
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 868384C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8683858
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 226, 0, 38  @ 8683864
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 8683870
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_harp, 255, 242, 0, 242  @ 8683E70
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 868387C
 	voice_keysplit voicegroup006, KeySplitTable2  @ 8683888
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8683894
@@ -10396,7 +10396,7 @@ voicegroup097:: @ 869347C
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 8693698
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86936A4
 	voice_directsound 60, 0, DirectSoundWaveData_sc88_timpani, 255, 0, 180, 249  @ 86936B0
-	voice_square_1 0, 2, 0, 0, 15, 0  @ 86936BC
+	voice_keysplit voicegroup006, KeySplitTable2  @ 8677378
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86936C8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86936D4
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86936E0
@@ -23049,6 +23049,399 @@ voicegroup200:: @ 86AB938
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA88
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA94
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAA0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAAC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAB8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAC4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 869B684
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_fretless_bass, 255, 253, 0, 149  @ 8675E84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAE8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAF4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB00
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB0C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB18
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB24
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB30
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB3C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 216, 0, 165  @ 867919C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 216, 0, 165  @ 867919C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_harp, 255, 246, 0, 235  @ 86ABB60
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_timpani, 255, 204, 193, 239  @ 8675F38
+	voice_keysplit voicegroup006, KeySplitTable2  @ 86ABB78
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB90
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB9C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBA8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBB4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBC0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBCC
+	voice_keysplit voicegroup007, KeySplitTable3  @ 86ABBD8
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC14
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC20
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC2C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC38
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC44
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC50
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC5C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC68
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC74
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC80
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC8C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC98
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_flute, 255, 127, 231, 127  @ 86ABCA4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCB0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCBC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCC8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCD4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCE0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCEC
+	voice_square_1_alt 0, 0, 0, 1, 5, 2  @ 86ABCF8
+	voice_square_2_alt 3, 0, 3, 4, 2  @ 86ABD04
+	voice_square_2_alt 0, 0, 2, 6, 5  @ 86ABD10
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD1C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD28
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD34
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD40
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD4C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD58
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD64
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD70
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD7C
+	voice_programmable_wave_alt ProgrammableWaveData_86B4900, 0, 0, 12, 0  @ 86ABD88
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD94
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDA0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDAC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDB8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDC4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDD0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDDC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDE8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDF4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE00
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE0C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE18
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE24
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE30
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE3C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE48
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE54
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE60
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE6C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE78
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE90
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE9C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEA8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEB4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEC0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABECC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABED8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEE4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEF0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEFC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABF08
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABF14
+	voice_noise_alt 0, 0, 2, 6, 0  @ 86ABF20
+	voice_noise_alt 0, 0, 1, 6, 0  @ 86ABF2C
+	
+	.align 2
+voicegroup201:: @ 86AB938
+	voice_keysplit_all voicegroup002  @ 86AB938
+	voice_keysplit voicegroup005, KeySplitTable1  @ 86AB944
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB950
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB95C
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226  @ 86AB968
+	voice_directsound 60, 65, DirectSoundWaveData_sd90_classical_detuned_ep1_high, 255, 204, 77, 246  @ 86AB974
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB980
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB98C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB998
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9A4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9B0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9BC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9C8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9D4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_tubular_bell, 255, 216, 90, 242  @ 86771E0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_tubular_bell, 255, 216, 90, 242  @ 86771E0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9F8
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 255, 76, 133, 137  @ 86ABA04
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA10
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA1C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA28
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_accordion, 64, 188, 108, 165  @ 86ABA34
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA40
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA4C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_nylon_str_guitar, 255, 249, 25, 127  @ 86ABA58
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA64
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA70
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA7C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA88
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA94
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAA0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAAC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAB8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAC4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 869B684
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_fretless_bass, 255, 253, 0, 149  @ 8675E84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAE8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAF4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB00
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB0C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB18
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB24
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB30
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB3C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 216, 0, 165  @ 867919C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 216, 0, 165  @ 867919C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_harp, 255, 246, 0, 235  @ 86ABB60
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_timpani, 255, 204, 193, 239  @ 8675F38
+	voice_keysplit voicegroup006, KeySplitTable2  @ 86ABB78
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB90
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB9C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBA8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBB4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBC0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBCC
+	voice_keysplit voicegroup007, KeySplitTable3  @ 86ABBD8
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC14
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC20
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC2C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC38
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC44
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC50
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC5C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC68
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC74
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC80
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC8C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC98
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_flute, 255, 127, 231, 127  @ 86ABCA4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCB0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCBC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCC8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCD4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCE0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCEC
+	voice_square_1_alt 0, 0, 0, 1, 5, 2  @ 86ABCF8
+	voice_square_2_alt 3, 0, 3, 4, 2  @ 86ABD04
+	voice_square_2_alt 0, 0, 2, 6, 5  @ 86ABD10
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD1C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD28
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD34
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD40
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD4C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD58
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD64
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD70
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD7C
+	voice_programmable_wave_alt ProgrammableWaveData_86B4900, 0, 0, 12, 0  @ 86ABD88
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD94
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDA0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDAC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDB8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDC4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDD0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDDC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDE8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDF4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE00
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE0C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE18
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE24
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE30
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE3C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE48
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE54
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE60
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE6C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE78
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE90
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE9C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEA8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEB4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEC0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABECC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABED8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEE4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEF0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEFC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABF08
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABF14
+	voice_noise_alt 0, 0, 2, 6, 0  @ 86ABF20
+	voice_noise_alt 0, 0, 1, 6, 0  @ 86ABF2C
+	
+	.align 2
+voicegroup202:: @ 86AB938
+	voice_keysplit_all voicegroup002  @ 86AB938
+	voice_keysplit voicegroup005, KeySplitTable1  @ 86AB944
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB950
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB95C
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226  @ 86AB968
+	voice_directsound 60, 65, DirectSoundWaveData_sd90_classical_detuned_ep1_high, 255, 204, 77, 246  @ 86AB974
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB980
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB98C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB998
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9A4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9B0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9BC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9C8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9D4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_tubular_bell, 255, 216, 90, 242  @ 86771E0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_tubular_bell, 255, 216, 90, 242  @ 86771E0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9F8
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 255, 76, 133, 137  @ 86ABA04
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA10
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA1C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA28
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_accordion, 64, 188, 108, 165  @ 86ABA34
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA40
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA4C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_nylon_str_guitar, 255, 249, 25, 127  @ 86ABA58
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA64
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA70
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA7C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA88
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA94
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAA0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAAC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAB8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAC4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pick_bass, 255, 253, 0, 149  @ 869B684
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_fretless_bass, 255, 253, 0, 149  @ 8675E84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAE8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAF4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB00
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB0C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB18
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB24
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB30
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB3C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 216, 0, 165  @ 867919C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_pizzicato_strings, 255, 216, 0, 165  @ 867919C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_harp, 255, 246, 0, 235  @ 86ABB60
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_timpani, 255, 204, 193, 239  @ 8675F38
+	voice_keysplit voicegroup006, KeySplitTable2  @ 86ABB78
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB90
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABB9C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBA8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBB4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBC0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABBCC
+	voice_keysplit voicegroup007, KeySplitTable3  @ 86ABBD8
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup008, KeySplitTable4  @ 86773F0
+	voice_keysplit voicegroup009, KeySplitTable5  @ 8677408
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC14
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC20
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC2C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC38
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC44
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC50
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC5C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC68
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC74
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC80
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC8C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABC98
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_flute, 255, 127, 231, 127  @ 86ABCA4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCB0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCBC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCC8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCD4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCE0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABCEC
+	voice_square_1_alt 0, 0, 0, 1, 5, 2  @ 86ABCF8
+	voice_square_2_alt 3, 0, 3, 4, 2  @ 86ABD04
+	voice_square_2_alt 0, 0, 2, 6, 5  @ 86ABD10
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD1C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD28
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD34
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD40
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD4C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD58
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD64
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD70
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD7C
+	voice_programmable_wave_alt ProgrammableWaveData_86B4900, 0, 0, 12, 0  @ 86ABD88
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABD94
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDA0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDAC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDB8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDC4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDD0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDDC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDE8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABDF4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE00
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE0C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE18
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE24
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE30
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE3C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE48
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE54
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE60
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE6C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE78
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE84
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE90
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABE9C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEA8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEB4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEC0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABECC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABED8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEE4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEF0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABEFC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABF08
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABF14
+	voice_noise_alt 0, 0, 2, 6, 0  @ 86ABF20
+	voice_noise_alt 0, 0, 1, 6, 0  @ 86ABF2C
+	
+	.align 2
+voicegroup203:: @ 86AB938
+	voice_keysplit_all voicegroup002  @ 86AB938
+	voice_keysplit voicegroup005, KeySplitTable1  @ 86AB944
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB950
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB95C
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226  @ 86AB968
+	voice_directsound 60, 65, DirectSoundWaveData_sd90_classical_detuned_ep1_high, 255, 204, 77, 246  @ 86AB974
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB980
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB98C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB998
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9A4
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9B0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9BC
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9C8
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9D4
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_tubular_bell, 255, 216, 90, 242  @ 86771E0
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_tubular_bell, 255, 216, 90, 242  @ 86771E0
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86AB9F8
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_organ2, 255, 76, 133, 137  @ 86ABA04
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA10
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA1C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA28
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_accordion, 64, 188, 108, 165  @ 86ABA34
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA40
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA4C
+	voice_directsound 60, 0, DirectSoundWaveData_sc88_nylon_str_guitar, 255, 249, 25, 127  @ 86ABA58
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA64
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA70
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA7C
+	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABA88
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_overdrive_guitar, 255, 0, 255, 127  @ 86965CC
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_overdrive_guitar, 255, 0, 255, 127  @ 86965CC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAAC
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAB8
 	voice_square_1 0, 2, 0, 0, 15, 0  @ 86ABAC4

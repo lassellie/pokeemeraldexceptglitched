@@ -621,6 +621,10 @@ gSongTable:: @ 86B49F0
 	song mus_center, 0, 0
 	song mus_shop, 0, 0
 	song mus_gym, 0, 0
+	song mus_f_rival, 0, 0
+	song mus_m_rival, 0, 0
+	song mus_rival_battle, 0, 0
+	song mus_gym_leader, 0, 0
 	.align 2
 dummy_song_header: @ 86B5D00
 	.byte 0, 0, 0, 0

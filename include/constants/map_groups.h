@@ -74,6 +74,7 @@
 #define MAP_YVELDHOUSE2         (69 | (0 << 8))
 #define MAP_NEW_MAP4            (70 | (0 << 8))
 #define MAP_YVELDSPRING         (71 | (0 << 8))
+#define MAP_NEW_MAP6            (72 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -603,11 +604,13 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_SPLENDALE    (0 | (34 << 8))
-#define MAP_POKEMON_LAB  (1 | (34 << 8))
-#define MAP_PLAYER_HOUSE (2 | (34 << 8))
-#define MAP_NEW_MAP1     (3 | (34 << 8))
-#define MAP_NEW_MAP5     (4 | (34 << 8))
+#define MAP_SPLENDALE        (0 | (34 << 8))
+#define MAP_POKEMON_LAB      (1 | (34 << 8))
+#define MAP_PLAYER_HOUSE     (2 | (34 << 8))
+#define MAP_NEW_MAP1         (3 | (34 << 8))
+#define MAP_NEW_MAP5         (4 | (34 << 8))
+#define MAP_SPLENDALEHOUSE   (5 | (34 << 8))
+#define MAP_SPLENDALEHOUSE2F (6 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

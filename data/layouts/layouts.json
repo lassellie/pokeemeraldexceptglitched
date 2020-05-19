@@ -4413,7 +4413,7 @@
         {
             "blockdata_filepath": "data/layouts/Splendale/map.bin",
             "border_filepath": "data/layouts/Splendale/border.bin",
-            "height": 20,
+            "height": 26,
             "id": "LAYOUT_SPLENDALE",
             "name": "Splendale_Layout",
             "primary_tileset": "gTileset_General",
@@ -4433,7 +4433,7 @@
         {
             "blockdata_filepath": "data/layouts/Route3/map.bin",
             "border_filepath": "data/layouts/Route3/border.bin",
-            "height": 20,
+            "height": 22,
             "id": "LAYOUT_ROUTE3",
             "name": "Route3_Layout",
             "primary_tileset": "gTileset_General",
@@ -4488,7 +4488,7 @@
             "name": "Burrowsville_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Cave",
-            "width": 30
+            "width": 34
         },
         {
             "blockdata_filepath": "data/layouts/NewMap1/map.bin",
@@ -4609,6 +4609,36 @@
             "primary_tileset": "gTileset_Building",
             "secondary_tileset": "gTileset_Lab",
             "width": 20
+        },
+        {
+            "blockdata_filepath": "data/layouts/splendalehouse/map.bin",
+            "border_filepath": "data/layouts/splendalehouse/border.bin",
+            "height": 9,
+            "id": "LAYOUT_SPLENDALEHOUSE",
+            "name": "splendalehouse_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 10
+        },
+        {
+            "blockdata_filepath": "data/layouts/splendalehouse2f/map.bin",
+            "border_filepath": "data/layouts/splendalehouse2f/border.bin",
+            "height": 8,
+            "id": "LAYOUT_SPLENDALEHOUSE2F",
+            "name": "splendalehouse2f_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 9
+        },
+        {
+            "blockdata_filepath": "data/layouts/NewMap6/map.bin",
+            "border_filepath": "data/layouts/NewMap6/border.bin",
+            "height": 8,
+            "id": "LAYOUT_NEW_MAP6",
+            "name": "NewMap6_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_GenericBuilding",
+            "width": 8
         }
     ],
     "layouts_table_label": "gMapLayouts"
