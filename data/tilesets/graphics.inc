@@ -1730,6 +1730,11 @@ gTilesetPalettes_UnionRoom:: @ 8395678
 gTilesetTiles_UnionRoom:: @ 8395878
 	.incbin "data/tilesets/secondary/union_room/tiles.4bpp.lz"
 
+
+	.align 2
+gTilesetPalOverride_General05::
+	.incbin "data/tilesets/primary/general/palettes/05_over.gbapal"
+
 	.align 2
 gTilesetPalettes_snowset::
 	.incbin "data/tilesets/secondary/snowset/palettes/00.gbapal"

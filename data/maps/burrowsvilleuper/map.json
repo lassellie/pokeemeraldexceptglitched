@@ -30,8 +30,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 9,
-            "y": 19
+            "x": 8,
+            "y": 20
         },
         {
             "elevation": 3,
@@ -52,7 +52,7 @@
             "graphics_id": "EVENT_OBJ_GFX_CAMPER",
             "movement_range_x": 2,
             "movement_range_y": 3,
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
@@ -89,14 +89,14 @@
             "elevation": 3,
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_HIKER",
-            "movement_range_x": 3,
-            "movement_range_y": 4,
+            "movement_range_x": 2,
+            "movement_range_y": 3,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 20,
-            "y": 22
+            "x": 19,
+            "y": 25
         },
         {
             "elevation": 3,
@@ -143,12 +143,12 @@
             "graphics_id": "EVENT_OBJ_GFX_YOUNGSTER",
             "movement_range_x": 2,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 15,
-            "y": 5
+            "x": 24,
+            "y": 8
         }
     ],
     "region_map_section": "MAPSEC_YVELD",
@@ -181,7 +181,7 @@
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 24,
-            "y": 11
+            "y": 13
         },
         {
             "dest_map": "MAP_NEW_MAP2",
@@ -195,7 +195,7 @@
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 16,
-            "y": 10
+            "y": 11
         },
         {
             "dest_map": "MAP_NEW_MAP4",
@@ -208,7 +208,7 @@
             "dest_map": "MAP_YVELDHOUSE",
             "dest_warp_id": 0,
             "elevation": 0,
-            "x": 15,
+            "x": 14,
             "y": 24
         },
         {
@@ -216,7 +216,7 @@
             "dest_warp_id": 0,
             "elevation": 0,
             "x": 10,
-            "y": 16
+            "y": 17
         },
         {
             "dest_map": "MAP_MORPHON",
