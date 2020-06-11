@@ -940,6 +940,75 @@
                     "map": "MAP_ARTISAN_CAVE_B1F"
                 },
                 {
+                    "base_label": "gBurrowsville0",
+                    "land_mons": {
+                        "encounter_rate": 20,
+                        "mons": [
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_SWINUB"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_SNORUNT"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_SPHEAL"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_SWINUB"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 6,
+                                "min_level": 3,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 6,
+                                "min_level": 3,
+                                "species": "SPECIES_SNORUNT"
+                            }
+                        ]
+                    },
+                    "map": "MAP_BURROWSVILLE"
+                },
+                {
                     "base_label": "gCaveOfOrigin_1F",
                     "land_mons": {
                         "encounter_rate": 4,
@@ -3300,6 +3369,75 @@
                         ]
                     },
                     "map": "MAP_METEOR_FALLS_STEVENS_CAVE"
+                },
+                {
+                    "base_label": "gMiningCave0",
+                    "land_mons": {
+                        "encounter_rate": 20,
+                        "mons": [
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_ZUBAT"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_CUBONE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_ARON"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_GEODUDE"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_ZUBAT"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_ARON"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_SPINARAK"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_SPINARAK"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 2,
+                                "species": "SPECIES_ZUBAT"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 3,
+                                "species": "SPECIES_ZUBAT"
+                            }
+                        ]
+                    },
+                    "map": "MAP_MINING_CAVE"
                 },
                 {
                     "base_label": "gMirageTower_1F",

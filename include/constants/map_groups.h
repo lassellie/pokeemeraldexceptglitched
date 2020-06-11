@@ -75,6 +75,7 @@
 #define MAP_NEW_MAP4            (70 | (0 << 8))
 #define MAP_YVELDSPRING         (71 | (0 << 8))
 #define MAP_NEW_MAP6            (72 | (0 << 8))
+#define MAP_SECLUDEDFOREST      (73 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -438,10 +439,10 @@
 #define MAP_SECRET_BASE_YELLOW_CAVE4        (21 | (25 << 8))
 #define MAP_SECRET_BASE_TREE4               (22 | (25 << 8))
 #define MAP_SECRET_BASE_SHRUB4              (23 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_2P             (24 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM2P              (24 | (25 << 8))
 #define MAP_TRADE_CENTER                    (25 | (25 << 8))
 #define MAP_RECORD_CORNER                   (26 | (25 << 8))
-#define MAP_BATTLE_COLOSSEUM_4P             (27 | (25 << 8))
+#define MAP_BATTLE_COLOSSEUM4P              (27 | (25 << 8))
 #define MAP_CONTEST_HALL                    (28 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_29 (29 | (25 << 8))
 #define MAP_UNKNOWN_LINK_CONTEST_ROOM_25_30 (30 | (25 << 8))

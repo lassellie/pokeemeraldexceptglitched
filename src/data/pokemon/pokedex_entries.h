@@ -4677,4 +4677,15 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+	[NATIONAL_DEX_KELVITTEN] =
+    {
+        .categoryName = _("CHILLY"),
+        .height = 7,
+        .weight = 10,
+        .description = gKelvittenPokedexText,
+        .pokemonScale = 541,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+	},
 };

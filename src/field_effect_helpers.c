@@ -76,7 +76,7 @@ void LoadObjectReflectionPalette(struct EventObject *eventObject, struct Sprite 
 // When walking on a bridge high above water (Route 120), the reflection is a solid dark blue color.
 // This is so the sprite blends in with the dark water metatile underneath the bridge.
         sprite->data[2] = bridgeReflectionVerticalOffsets[bridgeType - 1];
-		LoadEventObjectPalette(EVENT_OBJ_PAL_TAG_10);
+		LoadEventObjectPalette(EVENT_OBJ_PAL_TAG_10, TRUE);
         sprite->oam.paletteNum = IndexOfSpritePaletteTag(EVENT_OBJ_PAL_TAG_10);
         UpdatePaletteGammaType(sprite->oam.paletteNum, GAMMA_NORMAL);
         UpdateSpritePaletteWithWeather(sprite->oam.paletteNum);
@@ -1583,7 +1583,7 @@ void LoadFieldEffectPalette(u8 fieldEffect)
     spriteTemplate = gFieldEffectObjectTemplatePointers[fieldEffect];
     if (spriteTemplate->paletteTag != 0xffff)
     {
-        LoadEventObjectPalette(spriteTemplate->paletteTag);
+        LoadEventObjectPalette(spriteTemplate->paletteTag, TRUE);
         UpdatePaletteGammaType(IndexOfSpritePaletteTag(spriteTemplate->paletteTag), GAMMA_NORMAL);
     }
 }

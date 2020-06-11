@@ -10,7 +10,7 @@
     ],
     "id": "MAP_YVELDSPRING",
     "layout": "LAYOUT_YVELDSPRING",
-    "map_type": "MAP_TYPE_UNUSED_1",
+    "map_type": "MAP_TYPE_UNDERGROUND",
     "music": "MUS_YVELD",
     "name": "yveldspring",
     "object_events": [
@@ -131,5 +131,5 @@
             "y": 7
         }
     ],
-    "weather": "WEATHER_SUNNY"
+    "weather": "WEATHER_NONE"
 }

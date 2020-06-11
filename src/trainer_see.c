@@ -675,7 +675,7 @@ u8 FldEff_ExclamationMarkIcon(void)
 {
     u8 spriteId, paletteNum;
 
-    LoadEventObjectPalette(0x1100);
+    LoadEventObjectPalette(0x1100, FALSE);
     UpdatePaletteGammaType(IndexOfSpritePaletteTag(0x1100), GAMMA_ALT);
     UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(0x1100));
     spriteId = CreateSpriteAtEnd(&sSpriteTemplate_ExclamationQuestionMark, 0, 0, 0x53);
@@ -690,7 +690,7 @@ u8 FldEff_QuestionMarkIcon(void)
 {
     u8 spriteId;
 
-    LoadEventObjectPalette(0x1100);
+    LoadEventObjectPalette(0x1100, FALSE);
     UpdatePaletteGammaType(IndexOfSpritePaletteTag(0x1100), GAMMA_ALT);
     UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(0x1100));
     spriteId = CreateSpriteAtEnd(&sSpriteTemplate_ExclamationQuestionMark, 0, 0, 0x52);

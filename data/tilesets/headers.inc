@@ -8,8 +8,7 @@ gTileset_General:: @ 83DF704
 	.4byte gMetatiles_General
 	.4byte gMetatileAttributes_General
 	.4byte InitTilesetAnim_General
-	.4byte NULL @ TODO: gTilesetPalOverrides_General
-	.4byte NULL
+	.4byte gTilesetPalOverrides_General
 
 	.align 2
 gTileset_Petalburg:: @ 83DF71C
@@ -918,6 +917,7 @@ gTileset_snowset::
 	.4byte gMetatiles_snowset
 	.4byte gMetatileAttributes_snowset
 	.4byte NULL
+	.4byte NULL
 
 	.align 2
 gTileset_mainplanet::
@@ -929,6 +929,7 @@ gTileset_mainplanet::
 	.4byte gMetatiles_mainplanet
 	.4byte gMetatileAttributes_mainplanet
 	.4byte NULL
+	.4byte NULL
 
 	.align 2
 gTileset_redonemainplanet::
@@ -939,4 +940,5 @@ gTileset_redonemainplanet::
 	.4byte gTilesetPalettes_redonemainplanet
 	.4byte gMetatiles_redonemainplanet
 	.4byte gMetatileAttributes_redonemainplanet
+	.4byte NULL
 	.4byte NULL

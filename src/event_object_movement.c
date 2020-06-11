@@ -29,6 +29,8 @@
 #include "constants/items.h"
 #include "constants/mauville_old_man.h"
 #include "field_weather.h"
+#include "sound.h"
+#include "constants/songs.h"
 
 // this file was known as evobjmv.c in Game Freak's original source
 
@@ -115,7 +117,7 @@ static void RemoveEventObjectIfOutsideView(struct EventObject *);
 static void sub_808E1B8(u8, s16, s16);
 static void SetPlayerAvatarEventObjectIdAndObjectId(u8, u8);
 static void sub_808E38C(struct EventObject *);
-static u8 sub_808E8F4(const struct SpritePalette *);
+static u8 sub_808E8F4(const struct SpritePalette *, u8 daynightTint);
 static u8 FindEventObjectPaletteIndexByTag(u16);
 static void sub_808EAB0(u16, u8);
 static bool8 EventObjectDoesZCoordMatch(struct EventObject *, u8);
@@ -1186,7 +1188,7 @@ static u8 TrySetupEventObjectSprite(struct EventObjectTemplate *eventObjectTempl
     graphicsInfo = GetEventObjectGraphicsInfo(eventObject->graphicsId);
 	if (spriteTemplate->paletteTag != 0xffff)
 	{
-		LoadEventObjectPalette(spriteTemplate->paletteTag);
+		LoadEventObjectPalette(spriteTemplate->paletteTag, TRUE );
 		UpdatePaletteGammaType(IndexOfSpritePaletteTag(spriteTemplate->paletteTag), GAMMA_ALT);
 	}
 
@@ -1318,7 +1320,7 @@ u8 AddPseudoEventObject(u16 graphicsId, void (*callback)(struct Sprite *), s16 x
     MakeObjectTemplateFromEventObjectGraphicsInfo(graphicsId, callback, spriteTemplate, &subspriteTables);
     if (spriteTemplate->paletteTag != 0xFFFF)
     {
-        LoadEventObjectPalette(spriteTemplate->paletteTag);
+        LoadEventObjectPalette(spriteTemplate->paletteTag, FALSE);
     }
     spriteId = CreateSprite(spriteTemplate, x, y, subpriority);
     free(spriteTemplate);
@@ -1496,7 +1498,7 @@ static void sub_808E1B8(u8 eventObjectId, s16 x, s16 y)
     spriteTemplate.images = &spriteFrameImage;
 	if (spriteTemplate.paletteTag != 0xffff)
 	{
-		LoadEventObjectPalette(spriteTemplate.paletteTag);
+		LoadEventObjectPalette(spriteTemplate.paletteTag, TRUE);
 		UpdatePaletteGammaType(IndexOfSpritePaletteTag(spriteTemplate.paletteTag), GAMMA_ALT);
 	}
     spriteId = CreateSprite(&spriteTemplate, 0, 0, 0);
@@ -1640,7 +1642,7 @@ static void get_berry_tree_graphics(struct EventObject *eventObject, struct Spri
         if (berryId > ITEM_TO_BERRY(LAST_BERRY_INDEX))
             berryId = 0;
 
-		LoadEventObjectPalette(gBerryTreePaletteTagTablePointers[berryId][berryStage]);
+		LoadEventObjectPalette(gBerryTreePaletteTagTablePointers[berryId][berryStage], TRUE);
         EventObjectSetGraphicsId(eventObject, gBerryTreeEventObjectGraphicsIdTablePointers[berryId][berryStage]);
         sprite->images = gBerryTreePicTablePointers[berryId];
         sprite->oam.paletteNum = IndexOfSpritePaletteTag(gBerryTreePaletteTagTablePointers[berryId][berryStage]);
@@ -1754,13 +1756,13 @@ void FreeAndReserveObjectSpritePalettes(void)
     gReservedSpritePaletteCount = 12;
 }
 
-void LoadEventObjectPalette(u16 paletteTag)
+void LoadEventObjectPalette(u16 paletteTag, u8 daynightTint)
 {
     u16 i = FindEventObjectPaletteIndexByTag(paletteTag);
 
     if (i != EVENT_OBJ_PAL_TAG_NONE) // always true
     {
-        sub_808E8F4(&sEventObjectSpritePalettes[i]);
+        sub_808E8F4(&sEventObjectSpritePalettes[i], daynightTint);
     }
 }
 
@@ -1770,18 +1772,27 @@ void Unused_LoadEventObjectPaletteSet(u16 *paletteTags)
 
     for (i = 0; paletteTags[i] != EVENT_OBJ_PAL_TAG_NONE; i++)
     {
-        LoadEventObjectPalette(paletteTags[i]);
+        LoadEventObjectPalette(paletteTags[i], FALSE);
     }
 }
 
 // NOTE: Does not use LoadSpritePaletteDayNight because of naming screen
-static u8 sub_808E8F4(const struct SpritePalette *spritePalette)
+static u8 sub_808E8F4(const struct SpritePalette *spritePalette, u8 daynightTint)
 {
     if (IndexOfSpritePaletteTag(spritePalette->tag) != 0xFF)
     {
         return 0xFF;
     }
-    return LoadSpritePalette(spritePalette);
+
+	if (daynightTint)
+    {
+    return LoadSpritePaletteDayNight(spritePalette);
+    }
+    else
+	{
+	return LoadSpritePalette(spritePalette);
+	}
+	
 }
 
 void PatchObjectPalette(u16 paletteTag, u8 paletteSlot)
@@ -7619,6 +7630,7 @@ void GroundEffect_StepOnTallGrass(struct EventObject *eventObj, struct Sprite *s
     gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
     gFieldEffectArguments[7] = 0;
     FieldEffectStart(FLDEFF_TALL_GRASS);
+	PlaySE(SE_W077);
 }
 
 void GroundEffect_SpawnOnLongGrass(struct EventObject *eventObj, struct Sprite *sprite)

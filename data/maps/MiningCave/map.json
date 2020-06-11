@@ -10,7 +10,7 @@
     ],
     "id": "MAP_MINING_CAVE",
     "layout": "LAYOUT_MINING_CAVE",
-    "map_type": "MAP_TYPE_UNUSED_1",
+    "map_type": "MAP_TYPE_UNDERGROUND",
     "music": "MUS_MINING_TUNNEL",
     "name": "MiningCave",
     "object_events": [

@@ -415,4 +415,5 @@ const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 	[SPECIES_GRAITH] = sGraithLevelUpLearnset,
 	[SPECIES_EMPISH] = sEmpishLevelUpLearnset,
 	[SPECIES_SLARCK] = sSlarckLevelUpLearnset,
+	[SPECIES_KELVITTEN] = sKelvittenLevelUpLearnset,
 };

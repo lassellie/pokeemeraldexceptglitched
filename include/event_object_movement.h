@@ -193,7 +193,7 @@ void UpdateEventObjectSpriteVisibility(struct Sprite *sprite, bool8 invisible);
 s16 sub_809773C(s16 a1);
 s16 sub_8097728(s16 a1);
 void CameraObjectReset2(void);
-void LoadEventObjectPalette(u16 paletteTag);
+void LoadEventObjectPalette(u16 paletteTag, u8 daynightTint);
 u8 EventObjectGetBerryTreeId(u8 eventObjectId);
 void sub_8092EF0(u8 mapId, u8 mapNumber, u8 mapGroup);
 bool8 IsBerryTreeSparkling(u8, u8, u8);

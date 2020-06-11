@@ -10,7 +10,7 @@
     ],
     "id": "MAP_BURROWSVILLE",
     "layout": "LAYOUT_BURROWSVILLE",
-    "map_type": "MAP_TYPE_TOWN",
+    "map_type": "MAP_TYPE_UNDERGROUND",
     "music": "MUS_MINING_TUNNEL",
     "name": "Burrowsville",
     "object_events": [

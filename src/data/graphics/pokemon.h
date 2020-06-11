@@ -2735,6 +2735,13 @@ const u32 gMonShinyPalette_Slarck[] = INCBIN_U32("graphics/pokemon/slarck/shiny.
 const u8 gMonIcon_Slarck[] = INCBIN_U8("graphics/pokemon/slarck/icon.4bpp");
 const u8 gMonFootprint_Slarck[] = INCBIN_U8("graphics/pokemon/slarck/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Kelvitten[] = INCBIN_U32("graphics/pokemon/kelvitten/front.4bpp.lz");
+const u32 gMonPalette_Kelvitten[] = INCBIN_U32("graphics/pokemon/kelvitten/normal.gbapal.lz");
+const u32 gMonBackPic_Kelvitten[] = INCBIN_U32("graphics/pokemon/kelvitten/back.4bpp.lz");
+const u32 gMonShinyPalette_Kelvitten[] = INCBIN_U32("graphics/pokemon/kelvitten/shiny.gbapal.lz");
+const u8 gMonIcon_Kelvitten[] = INCBIN_U8("graphics/pokemon/kelvitten/icon.4bpp");
+const u8 gMonFootprint_Kelvitten[] = INCBIN_U8("graphics/pokemon/kelvitten/footprint.1bpp");
+
 const u32 gMonStillFrontPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/front_b.4bpp.lz");
 const u32 gMonBackPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/back_b.4bpp.lz");
 const u8 gMonIcon_UnownB[] = INCBIN_U8("graphics/pokemon/unown/icon_b.4bpp");

@@ -9,7 +9,7 @@
         {
             "direction": "left",
             "map": "MAP_BURROWSVILLEUPER",
-            "offset": -10
+            "offset": -1
         }
     ],
     "coord_events": [

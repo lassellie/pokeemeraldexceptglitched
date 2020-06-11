@@ -494,6 +494,7 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 	SPECIES_TO_HOENN(GRAITH),
 	SPECIES_TO_HOENN(EMPISH),
 	SPECIES_TO_HOENN(SLARCK),
+	SPECIES_TO_HOENN(KELVITTEN),
     SPECIES_TO_HOENN(CHIMECHO),
 };
 
@@ -912,6 +913,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 	SPECIES_TO_NATIONAL(GRAITH),
 	SPECIES_TO_NATIONAL(EMPISH),
 	SPECIES_TO_NATIONAL(SLARCK),
+	SPECIES_TO_NATIONAL(KELVITTEN),
     SPECIES_TO_NATIONAL(CHIMECHO),
 };
 
@@ -1122,6 +1124,7 @@ const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using Nationa
 	HOENN_TO_NATIONAL(GRAITH),
 	HOENN_TO_NATIONAL(EMPISH),
 	HOENN_TO_NATIONAL(SLARCK),
+	HOENN_TO_NATIONAL(KELVITTEN),
     HOENN_TO_NATIONAL(BULBASAUR), // Pokémon from here onwards are UNSEEN in the HoennDex.
     HOENN_TO_NATIONAL(IVYSAUR),
     HOENN_TO_NATIONAL(VENUSAUR),
@@ -1383,6 +1386,161 @@ const s8 gNatureStatTable[][5] =
 #include "data/pokemon/level_up_learnset_pointers.h"
 
 // SPECIES_NONE are ignored in the following two tables, so decrement before accessing these arrays to get the right result
+
+/*Animation effect list: 
+
+00 - tiny bounce (used by Egg)
+01 - small grow,expand,grow,expand
+02 - shake side-to-side really fast
+03 - shake side-to-side normal speed
+04 - shake up-and-down normal speed
+05 - bounce and rotate left and right fast
+06 - hop up and down, hop left and right (used by Bulbasaur)
+07 - rotate left and right kinda slow
+08 - rotate left and right pretty fast twice
+09 - shrink a tiny bit, grow a tiny bit, kinda fast (similar to Growl)
+0A - move around kinda diagonally
+0B - rotate left and right but not that much, slowly
+0C - rotate left and right but not that much, fast
+0D - rotate from top left and right but not that much, slowly
+0E - rotate from top left and right but not that much, fast
+0F - shake left and right really fast, not as much as 02
+10 - shake up and down really fast
+11 - shake in circles really fast
+12 - twist around a bit
+13 - grow, shrink, kinda like a bounce (more than 00)
+14 - circle around really fast then freeze for a split second
+15 - glow a solid black color
+16 - stretch on horizontal axis kinda fast (like a growl)
+17 - stretch on vertical axis kinda fast (like a growl)
+18 - wiggle and rotate up and down
+19 - shake up and down twice
+1A - rotate a little and move to the left a little
+1B - rotate down, rotate up (I think it's used by Deoxys)
+1C - rotate down and up in a zigzag motion
+1D - rotate left and right in a zigzag motion
+1E - hop up and down a little
+1F - 360 degree spin (used by Spheal)
+20 - fade to a yellow
+21 - fade to a red
+22 - fade to blue
+23 - fade to orange-ish
+24 - fade to purple
+25 - move to left really fast
+26 - move toward bottom left and then do a 360 degree spin (used by Pidgeot)
+27 - sprite blinks several times (used by Kecleon?)
+28 - move toward bottom left and then do a backflip
+29 - move toward top right and then do a frontflip
+2A - rotate around really fast in a triangle motion
+2B - move like a wave left and right
+2C - blink yellow several times
+2D - tilt left and right fast
+2E - tilt left and right fast from top axis
+2F - rotate up, and then stomp back down (used by Venusaur)
+30 - squish down and up (Grimer?)
+31 - bounce left and right kinda fast
+32 - bounce back and forth
+33 - rotate left and right really fast
+34 - rotate left and right really really fast
+35 - sprite blinks several times really fast
+36 - rotate almost sideways and then bounce to the left
+37 - rotate left really fast a couple times
+38 - rotate right and shake a little
+39 - move in a square-ish motion really really really fast
+3A - slowly grow bigger (used by Gengar)
+3B - wiggle up and down while squishing
+3C - wiggle up and down while squishing faster
+3D - wiggle up but stay up then come back down while squishing
+3E - wiggle side to side fast while squishing
+3F - wiggle side to side even more while squishing
+40 - wiggle really fast left to right while squishing
+41 - grow freaking huge really fast a couple times (Heracross and Dodrio?)
+42 - move in a small oval kinda fast
+43 - move left and right while shaking
+44 - move left and right and then bounce a little?
+45 - tiny bounce like 00, except a lot slower
+46 - move left to right really slow
+47 - move up and down really slow
+48 - jump and shake kinda fast
+49 - jump and shake kinda slow
+4A - jump and shake really slow
+4B - move around in a zigzag motion kinda slow
+4C - shake left and right kinda slow
+4D - shake up and down kinda slow
+4E - rotate left and right a couple times then do it all again
+4F - move around in a circle-ish shape once
+50 - shake up and down twice
+51 - rotate in a zigzaggy way
+52 - shake up and down a tiny bit
+53 - 360 degree spin again
+54 - move in a triangle motion twice (used by Magnemite)
+55 - squish up and down twice
+56 - bounce around twice
+57 - shake up and down really fast
+58 - shake up and down moderate speed
+59 - shake left and right while moving a relatively long distance
+5A - tense up a little bit vertically
+5B - tense up a little bit horizontally
+5C - shake fast up and down but not that much
+5D - shake fast left and right but not that much
+5E - shake fast left just once
+5F - shake really fast left and right a couple times
+60 - shake really really fast left and right a couple times
+61 - shake really really fast up and down a couple times
+62 - jump-ish motion twice
+63 - jump-ish motion twice faster
+64 - move around in a circle really fast
+65 - grow bigger fast
+66 - move to the right then left while shaking
+67 - move to the right then left really fast while shaking
+68 - move in a triangle motion slow
+69 - move in a triangle motion really fast
+6A - move in a triangle motion twice
+6B - grow big then back to normal
+6C - grow big then back to normal twice
+6D - flutter left and right
+6E - flutter left and right slowly
+6F - flutter left and right really fast
+70 - flutter left and right but more wiggly idk
+71 - grow big fast then shrink fast twice
+72 - shrink and grow a little twice
+73 - get a little bigger like a growl
+74 - stretch fast vertically twice
+75 - stretch fast horizontally twice
+76 - stretch horizontally once
+77 - grow big twice in an erratic way
+78 - shake/growl/grow at the same time
+79 - move left and right in an arc motion
+7A - move left and right in an arc motion fast
+7B - move left and right in an arc motion really fast
+7C - flutter in an arc motion twice
+7D - flutter in an arc motion twice fast
+7E - flutter in an arc motion twice really fast
+7F - barely move in an arc motion
+80 - barely move in an arc motion fast
+81 - barely move in an arc motion really fast
+82 - tilt downwards
+83 - tilt downwards slow
+84 - tilt downwards twice fast
+85 - grow bigger twice in a shaky way
+86 - grow bigger in a shaky way fast
+87 - kinda growl/grow bigger shaky
+88 - charge to the right
+89 - charge to the right fast
+8A - charge to the right really fast
+8B - blink a yellow color several times
+8C - blink a yellow color several times faster
+8D - blink a yellow color several times faster i guess
+8E - turn red then violently shake
+8F - turn red then shake
+90 - turn red then slide left and right
+91 - turn green then violently shake
+92 - turn green then shake
+93 - turn green then slide left and right
+94 - turn blue then violently shake
+95 - turn blue then shake
+96 - turn blue then slide left and right
+*/ 
 
 static const u8 sMonFrontAnimIdsTable[] =
 {
@@ -1779,7 +1937,7 @@ static const u8 sMonFrontAnimIdsTable[] =
     [SPECIES_ARMALDO - 1] = 0x10,
     [SPECIES_RALTS - 1] = 0x45,
     [SPECIES_KIRLIA - 1] = 0x00,
-    [SPECIES_GARDEVOIR - 1] = 0x00,
+    [SPECIES_GARDEVOIR - 1] = 0x11,
     [SPECIES_BAGON - 1] = 0x19,
     [SPECIES_SHELGON - 1] = 0x04,
     [SPECIES_SALAMENCE - 1] = 0x0f,
@@ -1799,6 +1957,7 @@ static const u8 sMonFrontAnimIdsTable[] =
 	[SPECIES_GRAITH - 1] = 0x00,
 	[SPECIES_EMPISH - 1] = 0x01,
 	[SPECIES_SLARCK - 1] = 0x2d,
+	[SPECIES_KELVITTEN - 1] = 0x03,
     [SPECIES_CHIMECHO - 1] = 0x1d,
 };
 

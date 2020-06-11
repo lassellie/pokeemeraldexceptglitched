@@ -2336,3 +2336,9 @@ const u8 gSlarckPokedexText[] = _(
     "on the ocean floor.  Its diet consists\n"
     "of mainly algae, although it will eat\n"
 	"anything that swims in front of it.");
+	
+const u8 gKelvittenPokedexText[] = _(
+    "This poor POKéMON ends up sneezing\n"
+    "due to being unable to control its\n"
+    "ice powers yet.  Scientists wonder if\n"
+	"its sneezing is also a defensive mechanism.");

@@ -4304,19 +4304,11 @@ static const union AnimCmd sAnim_KIRLIA_1[] =
 
 static const union AnimCmd sAnim_GARDEVOIR_1[] =
 {
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(1, 3),
-    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -4607,6 +4599,15 @@ static const union AnimCmd sAnim_SLARCK_1[] =
 	ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_KELVITTEN_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 35),
+	ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
 
 static const union AnimCmd sAnim_EGG_1[] =
 {
@@ -6850,6 +6851,12 @@ static const union AnimCmd *const sAnims_SLARCK[] ={
 	sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_KELVITTEN[] ={
+    sAnim_GeneralFrame0,
+    sAnim_KELVITTEN_1,
+	sAnim_GeneralFrame0,
+};
+
 static const union AnimCmd *const sAnims_EGG[] ={
     sAnim_GeneralFrame0,
     sAnim_EGG_1,
@@ -7410,6 +7417,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(GRAITH),
 	ANIM_CMD(EMPISH),
 	ANIM_CMD(SLARCK),
+	ANIM_CMD(KELVITTEN),
     ANIM_CMD(EGG),
     ANIM_CMD(UNOWN_B),
     ANIM_CMD(UNOWN_C),

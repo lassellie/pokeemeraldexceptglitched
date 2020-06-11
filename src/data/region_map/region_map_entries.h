@@ -202,6 +202,7 @@ static const u8 sMapName_Splendale [] = _("SPLENDALE");
 static const u8 sMapName_Yveld [] = _("YVELD");
 static const u8 sMapName_YveldMine [] = _("YVELD MINE");
 static const u8 sMapName_MiningCave [] = _("MINING CAVE");
+static const u8 sMapName_secludedforest [] = _("SECLUDED FOREST");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_ABANDONED_SHIP]            = {6, 14, 1, 1, sMapName_AbandonedShip},
@@ -421,6 +422,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_WEEPTH_CHAMBER]            = {0, 0, 1, 1, sMapName_WeepthChamber},
     [MAPSEC_YVELD]                     = {0, 0, 1, 1, sMapName_Yveld},
     [MAPSEC_YVELD_MINE]                = {0, 0, 1, 1, sMapName_YveldMine},
+	[MAPSEC_SECLUDED_FOREST]           = {0, 0, 1, 1, sMapName_secludedforest},
 };
 
 #endif // GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

@@ -2194,3 +2194,7 @@ Cry_Empish::
 Cry_Slarck::
 	.incbin "sound/direct_sound_samples/cry_slarck.bin"
 	
+	.align 2
+Cry_Kelvitten::
+	.incbin "sound/direct_sound_samples/cry_kelvitten.bin"
+	

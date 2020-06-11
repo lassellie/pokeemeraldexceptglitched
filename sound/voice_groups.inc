@@ -14429,6 +14429,7 @@ gCryTable:: @ 869DCF4
 	cry Cry_Graith  @ 869EF18
 	cry Cry_Empish  @ 869EF18
 	cry Cry_Slarck  @ 869EF18
+	cry Cry_Kelvitten  @ 869EF18
 
 	.align 2
 gCryTable2:: @ 869EF24
@@ -14823,6 +14824,7 @@ gCryTable2:: @ 869EF24
 	cry2 Cry_Graith  @ 86A0148
 	cry2 Cry_Empish  @ 86A0148
 	cry2 Cry_Slarck  @ 86A0148
+	cry2 Cry_Kelvitten  @ 86A0148
 
 	.align 2
 voicegroup129:: @ 86A0154

@@ -9,14 +9,14 @@
         {
             "direction": "right",
             "map": "MAP_SNOWROUTE",
-            "offset": 10
+            "offset": 1
         }
     ],
     "coord_events": [
     ],
     "id": "MAP_BURROWSVILLEUPER",
     "layout": "LAYOUT_BURROWSVILLEUPER",
-    "map_type": "MAP_TYPE_UNUSED_1",
+    "map_type": "MAP_TYPE_TOWN",
     "music": "MUS_YVELD",
     "name": "burrowsvilleuper",
     "object_events": [
@@ -25,7 +25,7 @@
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_ARTIST",
             "movement_range_x": 2,
-            "movement_range_y": 3,
+            "movement_range_y": 2,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
@@ -38,7 +38,7 @@
             "flag": "0",
             "graphics_id": "EVENT_OBJ_GFX_BEAUTY",
             "movement_range_x": 2,
-            "movement_range_y": 2,
+            "movement_range_y": 1,
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
