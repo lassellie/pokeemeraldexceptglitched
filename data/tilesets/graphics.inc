@@ -1735,6 +1735,12 @@ gTilesetTiles_UnionRoom:: @ 8395878
 gTilesetPalOverride_General05::
 	.incbin "data/tilesets/primary/general/palettes/05_over.gbapal"
 
+
+	.align 2
+gTilesetPalOverride_Secondary08::
+	.incbin "data/tilesets/secondary/petalburg/palettes/08_over.gbapal"
+
+
 	.align 2
 gTilesetPalettes_snowset::
 	.incbin "data/tilesets/secondary/snowset/palettes/00.gbapal"

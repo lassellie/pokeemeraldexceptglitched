@@ -4508,7 +4508,7 @@
             "name": "burrowsvilleuper_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Cave",
-            "width": 30
+            "width": 34
         },
         {
             "blockdata_filepath": "data/layouts/morphon/map.bin",
@@ -4528,7 +4528,7 @@
             "name": "snowroute_Layout",
             "primary_tileset": "gTileset_mainplanet",
             "secondary_tileset": "gTileset_Cave",
-            "width": 40
+            "width": 65
         },
         {
             "blockdata_filepath": "data/layouts/firstcitypkmncenter/map.bin",
@@ -4643,11 +4643,11 @@
         {
             "blockdata_filepath": "data/layouts/secludedforest/map.bin",
             "border_filepath": "data/layouts/secludedforest/border.bin",
-            "height": 30,
+            "height": 40,
             "id": "LAYOUT_SECLUDEDFOREST",
             "name": "secludedforest_Layout",
             "primary_tileset": "gTileset_General",
-            "secondary_tileset": "gTileset_Petalburg",
+            "secondary_tileset": "gTileset_Rustboro",
             "width": 30
         }
     ],

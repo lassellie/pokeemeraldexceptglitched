@@ -1957,7 +1957,7 @@ static const u8 sMonFrontAnimIdsTable[] =
 	[SPECIES_GRAITH - 1] = 0x00,
 	[SPECIES_EMPISH - 1] = 0x01,
 	[SPECIES_SLARCK - 1] = 0x2d,
-	[SPECIES_KELVITTEN - 1] = 0x03,
+	[SPECIES_KELVITTEN - 1] = 0x09,
     [SPECIES_CHIMECHO - 1] = 0x1d,
 };
 
