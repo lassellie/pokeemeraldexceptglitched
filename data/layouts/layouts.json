@@ -4593,12 +4593,12 @@
         {
             "blockdata_filepath": "data/layouts/yveldspring/map.bin",
             "border_filepath": "data/layouts/yveldspring/border.bin",
-            "height": 21,
+            "height": 22,
             "id": "LAYOUT_YVELDSPRING",
             "name": "yveldspring_Layout",
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Lavaridge",
-            "width": 17
+            "width": 30
         },
         {
             "blockdata_filepath": "data/layouts/NewMap5/map.bin",
@@ -4649,6 +4649,16 @@
             "primary_tileset": "gTileset_General",
             "secondary_tileset": "gTileset_Rustboro",
             "width": 30
+        },
+        {
+            "blockdata_filepath": "data/layouts/yveldtoroute/map.bin",
+            "border_filepath": "data/layouts/yveldtoroute/border.bin",
+            "height": 10,
+            "id": "LAYOUT_YVELDTOROUTE",
+            "name": "yveldtoroute_Layout",
+            "primary_tileset": "gTileset_Building",
+            "secondary_tileset": "gTileset_Facility",
+            "width": 12
         }
     ],
     "layouts_table_label": "gMapLayouts"

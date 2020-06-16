@@ -78,12 +78,12 @@
             "graphics_id": "EVENT_OBJ_GFX_PSYCHIC_M",
             "movement_range_x": 0,
             "movement_range_y": 0,
-            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 57,
-            "y": 10
+            "x": 54,
+            "y": 7
         },
         {
             "elevation": 3,
@@ -127,15 +127,15 @@
         {
             "elevation": 3,
             "flag": "0",
-            "graphics_id": "EVENT_OBJ_GFX_ANABEL",
+            "graphics_id": "EVENT_OBJ_GFX_GIRL_3",
             "movement_range_x": 3,
             "movement_range_y": 0,
             "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 40,
-            "y": 25
+            "x": 39,
+            "y": 24
         },
         {
             "elevation": 3,
@@ -160,8 +160,8 @@
             "script": "NULL",
             "trainer_sight_or_berry_tree_id": "0",
             "trainer_type": "0",
-            "x": 55,
-            "y": 8
+            "x": 57,
+            "y": 7
         },
         {
             "elevation": 3,
@@ -175,12 +175,32 @@
             "trainer_type": "0",
             "x": 23,
             "y": 9
+        },
+        {
+            "elevation": 3,
+            "flag": "0",
+            "graphics_id": "EVENT_OBJ_GFX_WOMAN_5",
+            "movement_range_x": 0,
+            "movement_range_y": 0,
+            "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+            "script": "NULL",
+            "trainer_sight_or_berry_tree_id": "0",
+            "trainer_type": "0",
+            "x": 57,
+            "y": 25
         }
     ],
-    "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+    "region_map_section": "MAPSEC_ROUTE_6",
     "requires_flash": false,
     "show_map_name": true,
     "warp_events": [
+        {
+            "dest_map": "MAP_YVELDTOROUTE",
+            "dest_warp_id": 2,
+            "elevation": 0,
+            "x": 6,
+            "y": 15
+        }
     ],
     "weather": "WEATHER_SNOW"
 }
