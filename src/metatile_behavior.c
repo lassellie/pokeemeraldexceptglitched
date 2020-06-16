@@ -17,6 +17,7 @@ static const u8 sTileBitAttributes[] =
     [MB_UNUSED_04] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_05] = TILE_ATTRIBUTES(FALSE, FALSE, TRUE),
     [MB_DEEP_SAND] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
+	[MB_DEEP_SNOW] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_SHORT_GRASS] = TILE_ATTRIBUTES(TRUE, FALSE, FALSE),
     [MB_UNUSED_CAVE] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_LONG_GRASS_SOUTH_EDGE] = TILE_ATTRIBUTES(TRUE, FALSE, FALSE),
@@ -44,6 +45,7 @@ static const u8 sTileBitAttributes[] =
     [MB_UNUSED_1F] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_ICE] = TILE_ATTRIBUTES(TRUE, FALSE, FALSE),
     [MB_SAND] = TILE_ATTRIBUTES(TRUE, FALSE, FALSE),
+	[MB_SNOW] = TILE_ATTRIBUTES(TRUE, FALSE, FALSE),
     [MB_SEAWEED] = TILE_ATTRIBUTES(TRUE, TRUE, TRUE),
     [MB_UNUSED_23] = TILE_ATTRIBUTES(TRUE, FALSE, FALSE),
     [MB_ASHGRASS] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
@@ -316,6 +318,22 @@ bool8 MetatileBehavior_IsSandOrDeepSand(u8 metatileBehavior)
 bool8 MetatileBehavior_IsDeepSand(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_DEEP_SAND)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSnowOrDeepSnow(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SNOW || metatileBehavior == MB_DEEP_SNOW)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsDeepSnow(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_DEEP_SNOW)
         return TRUE;
     else
         return FALSE;

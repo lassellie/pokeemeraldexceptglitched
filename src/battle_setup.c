@@ -629,6 +629,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
         return BATTLE_TERRAIN_SAND;
+	if (MetatileBehavior_IsSnowOrDeepSnow(tileBehavior))
+        return BATTLE_TERRAIN_SNOW;
 
     switch (gMapHeader.mapType)
     {
@@ -669,6 +671,10 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_SAND;
     if (GetSav1Weather() == 8)
         return BATTLE_TERRAIN_SAND;
+	if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE6))
+        return BATTLE_TERRAIN_SNOW;
+    if (GetSav1Weather() == 8)
+        return BATTLE_TERRAIN_SNOW;
 
     return BATTLE_TERRAIN_PLAIN;
 }

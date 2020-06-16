@@ -9786,6 +9786,9 @@ static void Cmd_getsecretpowereffect(void)
     case BATTLE_TERRAIN_SAND:
         gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_ACC_MINUS_1;
         break;
+	case BATTLE_TERRAIN_SNOW:
+        gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_SPD_MINUS_1;
+        break;
     case BATTLE_TERRAIN_UNDERWATER:
         gBattleCommunication[MOVE_EFFECT_BYTE] = MOVE_EFFECT_DEF_MINUS_1;
         break;

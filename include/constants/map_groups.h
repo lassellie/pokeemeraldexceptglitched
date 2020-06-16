@@ -76,6 +76,7 @@
 #define MAP_YVELDSPRING         (71 | (0 << 8))
 #define MAP_NEW_MAP6            (72 | (0 << 8))
 #define MAP_SECLUDEDFOREST      (73 | (0 << 8))
+#define MAP_YVELDTOROUTE        (74 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -613,6 +614,9 @@
 #define MAP_SPLENDALEHOUSE   (5 | (34 << 8))
 #define MAP_SPLENDALEHOUSE2F (6 | (34 << 8))
 
-#define MAP_GROUPS_COUNT 35
+//Map Group 37 (Just to make sure there is space for other groups)
+#define MAP_ROUTE6           (0 | (34 << 8))
+
+#define MAP_GROUPS_COUNT 36
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

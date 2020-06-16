@@ -652,6 +652,9 @@ $(EVENTOBJGFXDIR)/effects/unknown_20.4bpp: %.4bpp: %.png
 
 $(EVENTOBJGFXDIR)/effects/unknown_29.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 1
+	
+$(EVENTOBJGFXDIR)/effects/deep_snow.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 1
 
 $(EVENTOBJGFXDIR)/effects/lavaridge_gym_warp.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2

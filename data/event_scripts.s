@@ -1165,3 +1165,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/NewMap6/scripts.inc"
 
 	.include "data/maps/secludedforest/scripts.inc"
+
+	.include "data/maps/yveldtoroute/scripts.inc"

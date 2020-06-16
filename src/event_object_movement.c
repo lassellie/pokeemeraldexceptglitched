@@ -83,6 +83,7 @@ static void GetGroundEffectFlags_HotSprings(struct EventObject*, u32*);
 static void GetGroundEffectFlags_TallGrassOnBeginStep(struct EventObject*, u32*);
 static void GetGroundEffectFlags_LongGrassOnBeginStep(struct EventObject*, u32*);
 static void GetGroundEffectFlags_Tracks(struct EventObject*, u32*);
+static void GetGroundEffectFlags_Tracks2(struct EventObject*, u32*);
 static void GetGroundEffectFlags_Puddle(struct EventObject*, u32*);
 static void GetGroundEffectFlags_Ripple(struct EventObject*, u32*);
 static void GetGroundEffectFlags_Seaweed(struct EventObject*, u32*);
@@ -431,6 +432,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define EVENT_OBJ_PAL_TAG_33 0x1122
 #define EVENT_OBJ_PAL_TAG_34 0x1123
 #define EVENT_OBJ_PAL_TAG_35 0x1124
+#define EVENT_OBJ_PAL_TAG_36 0x1125
 #define EVENT_OBJ_PAL_TAG_NONE 0x11FF
 
 #include "data/field_event_obj/field_effect_object_template_pointers.h"
@@ -478,6 +480,7 @@ const struct SpritePalette sEventObjectSpritePalettes[] = {
     {gEventObjectPalette33, EVENT_OBJ_PAL_TAG_33},
     {gEventObjectPalette34, EVENT_OBJ_PAL_TAG_34},
 	{gEventObjectPalette35, EVENT_OBJ_PAL_TAG_35},
+	{gEventObjectPalette35, EVENT_OBJ_PAL_TAG_36},
     {NULL,                  0x0000},
 };
 
@@ -7201,6 +7204,7 @@ static void GetAllGroundEffectFlags_OnBeginStep(struct EventObject *eventObj, u3
     GetGroundEffectFlags_TallGrassOnBeginStep(eventObj, flags);
     GetGroundEffectFlags_LongGrassOnBeginStep(eventObj, flags);
     GetGroundEffectFlags_Tracks(eventObj, flags);
+	GetGroundEffectFlags_Tracks2(eventObj, flags);
     GetGroundEffectFlags_SandHeap(eventObj, flags);
     GetGroundEffectFlags_ShallowFlowingWater(eventObj, flags);
     GetGroundEffectFlags_Puddle(eventObj, flags);
@@ -7281,6 +7285,19 @@ static void GetGroundEffectFlags_Tracks(struct EventObject *eventObj, u32 *flags
              || MetatileBehavior_IsFootprints(eventObj->previousMetatileBehavior))
     {
         *flags |= GROUND_EFFECT_FLAG_SAND;
+    }
+}
+
+static void GetGroundEffectFlags_Tracks2(struct EventObject *eventObj, u32 *flags)
+{
+    if (MetatileBehavior_IsDeepSnow(eventObj->previousMetatileBehavior))
+    {
+        *flags |= GROUND_EFFECT_FLAG_DEEP_SNOW;
+    }
+    else if (MetatileBehavior_IsSnowOrDeepSnow(eventObj->previousMetatileBehavior)
+             || MetatileBehavior_IsFootprints(eventObj->previousMetatileBehavior))
+    {
+        *flags |= GROUND_EFFECT_FLAG_SNOW;
     }
 }
 
