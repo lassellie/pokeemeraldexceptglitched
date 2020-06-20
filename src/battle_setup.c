@@ -671,7 +671,7 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_SAND;
     if (GetSav1Weather() == 8)
         return BATTLE_TERRAIN_SAND;
-	if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE6) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE6))
+	if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SNOWROUTE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SNOWROUTE))
         return BATTLE_TERRAIN_SNOW;
     if (GetSav1Weather() == 8)
         return BATTLE_TERRAIN_SNOW;

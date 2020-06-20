@@ -253,6 +253,11 @@ const struct SpriteFrameImage gFieldEffectObjectPicTable_SandFootprints[] = {
     overworld_frame(gFieldEffectObjectPic_SandFootprints, 2, 2, 1),
 };
 
+const struct SpriteFrameImage gFieldEffectObjectPicTable_SnowFootprints[] = {
+    overworld_frame(gFieldEffectObjectPic_SnowFootprints, 2, 2, 0),
+    overworld_frame(gFieldEffectObjectPic_SnowFootprints, 2, 2, 1),
+};
+
 const union AnimCmd gFieldEffectObjectImageAnim_850CD18[] =
 {
     ANIMCMD_FRAME(0, 1, .vFlip = TRUE),
@@ -286,12 +291,29 @@ const union AnimCmd *const gFieldEffectObjectImageAnimTable_SandFootprints[] =
     gFieldEffectObjectImageAnim_850CD30,
 };
 
+const union AnimCmd *const gFieldEffectObjectImageAnimTable_SnowFootprints[] =
+{
+    gFieldEffectObjectImageAnim_850CD18,
+    gFieldEffectObjectImageAnim_850CD18,
+    gFieldEffectObjectImageAnim_850CD20,
+    gFieldEffectObjectImageAnim_850CD28,
+    gFieldEffectObjectImageAnim_850CD30,
+};
+
 const struct SpriteTemplate gFieldEffectObjectTemplate_SandFootprints = {0xFFFF, 0x1004, &gEventObjectBaseOam_16x16, gFieldEffectObjectImageAnimTable_SandFootprints, gFieldEffectObjectPicTable_SandFootprints, gDummySpriteAffineAnimTable, UpdateFootprintsTireTracksFieldEffect};
 
 const struct SpriteFrameImage gFieldEffectObjectPicTable_DeepSandFootprints[] = {
     overworld_frame(gFieldEffectObjectPic_DeepSandFootprints, 2, 2, 0),
     overworld_frame(gFieldEffectObjectPic_DeepSandFootprints, 2, 2, 1),
 };
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_SnowFootprints = {0xFFFF, 0x1004, &gEventObjectBaseOam_16x16, gFieldEffectObjectImageAnimTable_SnowFootprints, gFieldEffectObjectPicTable_SnowFootprints, gDummySpriteAffineAnimTable, UpdateFootprintsTireTracksFieldEffect};
+
+const struct SpriteFrameImage gFieldEffectObjectPicTable_DeepSnowFootprints[] = {
+    overworld_frame(gFieldEffectObjectPic_DeepSnowFootprints, 2, 2, 0),
+    overworld_frame(gFieldEffectObjectPic_DeepSnowFootprints, 2, 2, 1),
+};
+
 
 const union AnimCmd gFieldEffectObjectImageAnim_850CD74[] =
 {
@@ -327,6 +349,17 @@ const union AnimCmd *const gFieldEffectObjectImageAnimTable_DeepSandFootprints[]
 };
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_DeepSandFootprints = {0xFFFF, 0x1004, &gEventObjectBaseOam_16x16, gFieldEffectObjectImageAnimTable_DeepSandFootprints, gFieldEffectObjectPicTable_DeepSandFootprints, gDummySpriteAffineAnimTable, UpdateFootprintsTireTracksFieldEffect};
+
+const union AnimCmd *const gFieldEffectObjectImageAnimTable_DeepSnowFootprints[] =
+{
+    gFieldEffectObjectImageAnim_850CD74,
+    gFieldEffectObjectImageAnim_850CD74,
+    gFieldEffectObjectImageAnim_850CD7C,
+    gFieldEffectObjectImageAnim_850CD84,
+    gFieldEffectObjectImageAnim_850CD8C,
+};
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_DeepSnowFootprints = {0xFFFF, 0x1004, &gEventObjectBaseOam_16x16, gFieldEffectObjectImageAnimTable_DeepSnowFootprints, gFieldEffectObjectPicTable_DeepSnowFootprints, gDummySpriteAffineAnimTable, UpdateFootprintsTireTracksFieldEffect};
 
 const struct SpriteFrameImage gFieldEffectObjectPicTable_BikeTireTracks[] = {
     overworld_frame(gFieldEffectObjectPic_BikeTireTracks, 2, 2, 0),
@@ -615,6 +648,12 @@ const struct SpriteFrameImage gFieldEffectObjectPicTable_Unknown29[] = {
     overworld_frame(gFieldEffectObjectPic_Unknown29, 2, 1, 2),
 };
 
+const struct SpriteFrameImage gFieldEffectObjectPicTable_DeepSnow[] = {
+    overworld_frame(gFieldEffectObjectPic_DeepSnow,  2, 1, 0),
+    overworld_frame(gFieldEffectObjectPic_DeepSnow,  2, 1, 1),
+    overworld_frame(gFieldEffectObjectPic_DeepSnow,  2, 1, 2),
+};
+
 const union AnimCmd gFieldEffectObjectImageAnim_850D160[] =
 {
     ANIMCMD_FRAME(0, 4),
@@ -628,7 +667,14 @@ const union AnimCmd *const gFieldEffectObjectImageAnimTable_Unknown29[] =
     gFieldEffectObjectImageAnim_850D160,
 };
 
+const union AnimCmd *const gFieldEffectObjectImageAnimTable_DeepSnow[] =
+{
+    gFieldEffectObjectImageAnim_850D160,
+};
+
 const struct SpriteTemplate gFieldEffectObjectTemplate_Unknown29 = {0xFFFF, 0x1004, &gEventObjectBaseOam_16x8, gFieldEffectObjectImageAnimTable_Unknown29, gFieldEffectObjectPicTable_Unknown29, gDummySpriteAffineAnimTable, UpdateSandPileFieldEffect};
+
+const struct SpriteTemplate gFieldEffectObjectTemplate_DeepSnow = {0xFFFF, 0x1004, &gEventObjectBaseOam_16x8, gFieldEffectObjectImageAnimTable_DeepSnow, gFieldEffectObjectPicTable_DeepSnow, gDummySpriteAffineAnimTable, UpdateSnowPileFieldEffect};
 
 const struct SpriteFrameImage gFieldEffectObjectPicTable_Unknown20[] = {
     overworld_frame(gFieldEffectObjectPic_Unknown20, 2, 2, 0),

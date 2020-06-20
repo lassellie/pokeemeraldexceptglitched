@@ -601,6 +601,9 @@ $(EVENTOBJGFXDIR)/effects/bubbles.4bpp: %.4bpp: %.png
 
 $(EVENTOBJGFXDIR)/effects/deep_sand_footprints.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(EVENTOBJGFXDIR)/effects/deep_snow_footprints.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/effects/ground_impact_dust.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 1
@@ -621,6 +624,9 @@ $(EVENTOBJGFXDIR)/effects/sand_disguise_placeholder.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(EVENTOBJGFXDIR)/effects/sand_footprints.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(EVENTOBJGFXDIR)/effects/snow_footprints.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(EVENTOBJGFXDIR)/effects/short_grass.4bpp: %.4bpp: %.png

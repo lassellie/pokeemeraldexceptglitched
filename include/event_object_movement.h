@@ -47,6 +47,7 @@ struct UnkStruct_085094AC
 #define GROUND_EFFECT_FLAG_SEAWEED               (1 << 19)
 #define GROUND_EFFECT_FLAG_DEEP_SNOW             (1 << 20)
 #define GROUND_EFFECT_FLAG_SNOW                  (1 << 21)
+#define GROUND_EFFECT_FLAG_SNOW_PILE             (1 << 22)
 
 struct PairedPalettes
 {

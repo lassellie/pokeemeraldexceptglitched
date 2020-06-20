@@ -70,6 +70,9 @@ const u32 gBattleTerrainAnimTilemap_LongGrass[] = INCBIN_U32("graphics/battle_te
 const u32 gBattleTerrainAnimTiles_Sand[] = INCBIN_U32("graphics/battle_terrain/sand/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_Sand[] = INCBIN_U32("graphics/battle_terrain/sand/anim_map.bin.lz");
 
+const u32 gBattleTerrainAnimTiles_Snow[] = INCBIN_U32("graphics/battle_terrain/snow/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_Snow[] = INCBIN_U32("graphics/battle_terrain/snow/anim_map.bin.lz");
+
 const u32 gBattleTerrainAnimTiles_Underwater[] = INCBIN_U32("graphics/battle_terrain/underwater/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_Underwater[] = INCBIN_U32("graphics/battle_terrain/underwater/anim_map.bin.lz");
 

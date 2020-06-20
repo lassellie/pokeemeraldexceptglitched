@@ -11262,6 +11262,75 @@
                     }
                 },
                 {
+                    "base_label": "gsnowroute0",
+                    "land_mons": {
+                        "encounter_rate": 10,
+                        "mons": [
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_KELVITTEN"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SNORUNT"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SNORUNT"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SMOOCHUM"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SMOOCHUM"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SNEASEL"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SNEASEL"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SWINUB"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SWINUB"
+                            },
+                            {
+                                "max_level": 5,
+                                "min_level": 5,
+                                "species": "SPECIES_SWINUB"
+                            }
+                        ]
+                    },
+                    "map": "MAP_SNOWROUTE"
+                },
+                {
                     "base_label": "gSootopolisCity",
                     "fishing_mons": {
                         "encounter_rate": 10,

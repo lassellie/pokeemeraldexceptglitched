@@ -68,5 +68,8 @@
 #define FLDEFF_RAYQUAZA                  64
 #define FLDEFF_65                        65
 #define FLDEFF_MOVE_DEOXYS_ROCK          66
+#define FLDEFF_SNOW_PILE                 67
+#define FLDEFF_SNOW_FOOTPRINTS           68
+#define FLDEFF_DEEP_SNOW_FOOTPRINTS      69
 
 #endif

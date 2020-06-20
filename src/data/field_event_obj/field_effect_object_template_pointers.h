@@ -10,6 +10,7 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_Arrow;
 const struct SpriteTemplate gFieldEffectObjectTemplate_GroundImpactDust;
 const struct SpriteTemplate gFieldEffectObjectTemplate_BikeHopTallGrass;
 const struct SpriteTemplate gFieldEffectObjectTemplate_SandFootprints;
+const struct SpriteTemplate gFieldEffectObjectTemplate_SnowFootprints;
 const struct SpriteTemplate gFieldEffectObjectTemplate_BikeHopBigSplash;
 const struct SpriteTemplate gFieldEffectObjectTemplate_Splash;
 const struct SpriteTemplate gFieldEffectObjectTemplate_BikeHopSmallSplash;
@@ -22,6 +23,7 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_Unknown20;
 const struct SpriteTemplate gFieldEffectObjectTemplate_Unknown21;
 const struct SpriteTemplate gFieldEffectObjectTemplate_BerryTreeGrowthSparkle;
 const struct SpriteTemplate gFieldEffectObjectTemplate_DeepSandFootprints;
+const struct SpriteTemplate gFieldEffectObjectTemplate_DeepSnowFootprints;
 const struct SpriteTemplate gFieldEffectObjectTemplate_TreeDisguise;
 const struct SpriteTemplate gFieldEffectObjectTemplate_MountainDisguise;
 const struct SpriteTemplate gFieldEffectObjectTemplate_Bird;
@@ -49,6 +51,7 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     &gFieldEffectObjectTemplate_GroundImpactDust,
     &gFieldEffectObjectTemplate_BikeHopTallGrass,
     &gFieldEffectObjectTemplate_SandFootprints,
+	&gFieldEffectObjectTemplate_SnowFootprints,
     &gFieldEffectObjectTemplate_BikeHopBigSplash,
     &gFieldEffectObjectTemplate_Splash,
     &gFieldEffectObjectTemplate_BikeHopSmallSplash,
@@ -61,6 +64,7 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     &gFieldEffectObjectTemplate_Unknown21,
     &gFieldEffectObjectTemplate_BerryTreeGrowthSparkle,
     &gFieldEffectObjectTemplate_DeepSandFootprints,
+	&gFieldEffectObjectTemplate_DeepSnowFootprints,
     &gFieldEffectObjectTemplate_TreeDisguise,
     &gFieldEffectObjectTemplate_MountainDisguise,
     &gFieldEffectObjectTemplate_Bird,

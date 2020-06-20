@@ -532,6 +532,24 @@ u32 FldEff_SandFootprints(void)
     return 0;
 }
 
+u32 FldEff_SnowFootprints(void)
+{
+    u8 spriteId;
+    struct Sprite *sprite;
+
+    sub_80930E0((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[11], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    if (spriteId != MAX_SPRITES)
+    {
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gFieldEffectArguments[3];
+        sprite->data[7] = FLDEFF_SNOW_FOOTPRINTS;
+        StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+    }
+    return 0;
+}
+
 u32 FldEff_DeepSandFootprints(void)
 {
     u8 spriteId;
@@ -545,6 +563,24 @@ u32 FldEff_DeepSandFootprints(void)
         sprite->coordOffsetEnabled = TRUE;
         sprite->oam.priority = gFieldEffectArguments[3];
         sprite->data[7] = FLDEFF_DEEP_SAND_FOOTPRINTS;
+        StartSpriteAnim(sprite, gFieldEffectArguments[4]);
+    }
+    return spriteId;
+}
+
+u32 FldEff_DeepSnowFootprints(void)
+{
+    u8 spriteId;
+    struct Sprite *sprite;
+
+    sub_80930E0((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[23], gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    if (spriteId != MAX_SPRITES)
+    {
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gFieldEffectArguments[3];
+        sprite->data[7] = FLDEFF_DEEP_SNOW_FOOTPRINTS;
         StartSpriteAnim(sprite, gFieldEffectArguments[4]);
     }
     return spriteId;
@@ -1154,6 +1190,64 @@ void UpdateSandPileFieldEffect(struct Sprite *sprite)
     if (TryGetEventObjectIdByLocalIdAndMap(sprite->data[0], sprite->data[1], sprite->data[2], &eventObjectId) || !gEventObjects[eventObjectId].inSandPile)
     {
         FieldEffectStop(sprite, FLDEFF_SAND_PILE);
+    }
+    else
+    {
+        y = gSprites[gEventObjects[eventObjectId].spriteId].pos1.y;
+        x = gSprites[gEventObjects[eventObjectId].spriteId].pos1.x;
+        if (x != sprite->data[3] || y != sprite->data[4])
+        {
+            sprite->data[3] = x;
+            sprite->data[4] = y;
+            if (sprite->animEnded)
+            {
+                StartSpriteAnim(sprite, 0);
+            }
+        }
+        sprite->pos1.x = x;
+        sprite->pos1.y = y;
+        sprite->subpriority = gSprites[gEventObjects[eventObjectId].spriteId].subpriority;
+        UpdateEventObjectSpriteVisibility(sprite, FALSE);
+    }
+}
+
+u32 FldEff_SnowPile(void)
+{
+    u8 eventObjectId;
+    struct EventObject *eventObject;
+    u8 spriteId;
+    struct Sprite *sprite;
+    const struct EventObjectGraphicsInfo *graphicsInfo;
+
+    eventObjectId = GetEventObjectIdByLocalIdAndMap(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    eventObject = &gEventObjects[eventObjectId];
+    spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[29], 0, 0, 0);
+    if (spriteId != MAX_SPRITES)
+    {
+        graphicsInfo = GetEventObjectGraphicsInfo(eventObject->graphicsId);
+        sprite = &gSprites[spriteId];
+        sprite->coordOffsetEnabled = TRUE;
+        sprite->oam.priority = gSprites[eventObject->spriteId].oam.priority;
+        sprite->data[0] = gFieldEffectArguments[0];
+        sprite->data[1] = gFieldEffectArguments[1];
+        sprite->data[2] = gFieldEffectArguments[2];
+        sprite->data[3] = gSprites[eventObject->spriteId].pos1.x;
+        sprite->data[4] = gSprites[eventObject->spriteId].pos1.y;
+        sprite->pos2.y = (graphicsInfo->height >> 1) - 2;
+        SeekSpriteAnim(sprite, 2);
+    }
+    return 0;
+}
+
+void UpdateSnowPileFieldEffect(struct Sprite *sprite)
+{
+    u8 eventObjectId;
+    s16 x;
+    s16 y;
+
+    if (TryGetEventObjectIdByLocalIdAndMap(sprite->data[0], sprite->data[1], sprite->data[2], &eventObjectId) || !gEventObjects[eventObjectId].inSnowPile)
+    {
+        FieldEffectStop(sprite, FLDEFF_SNOW_PILE);
     }
     else
     {

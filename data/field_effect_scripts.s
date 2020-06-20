@@ -19,6 +19,7 @@ gFieldEffectScriptPointers:: @ 82DB9D4
 	.4byte gFieldEffectScript_UseSecretPowerCave
 	.4byte gFieldEffectScript_BikeHopTallGrass
 	.4byte gFieldEffectScript_SandFootprints
+	.4byte gFieldEffectScript_SnowFootprints
 	.4byte gFieldEffectScript_BikeHopBigSplash
 	.4byte gFieldEffectScript_Splash
 	.4byte gFieldEffectScript_BikeHopSmallSplash
@@ -30,6 +31,7 @@ gFieldEffectScriptPointers:: @ 82DB9D4
 	.4byte gFieldEffectScript_Unknown22
 	.4byte gFieldEffectScript_BerryTreeGrowthSparkle
 	.4byte gFieldEffectScript_DeepSandFootprints
+	.4byte gFieldEffectScript_DeepSnowFootprints
 	.4byte gFieldEffectScript_PokeCenterHeal
 	.4byte gFieldEffectScript_UseSecretPowerTree
 	.4byte gFieldEffectScript_UseSecretPowerShrub
@@ -45,6 +47,7 @@ gFieldEffectScriptPointers:: @ 82DB9D4
 	.4byte gFieldEffectScript_UseRockSmash
 	.4byte gFieldEffectScript_UseDig
 	.4byte gFieldEffectScript_SandPile
+	.4byte gFieldEffectScript_SnowPile
 	.4byte gFieldEffectScript_UseStrength
 	.4byte gFieldEffectScript_ShortGrass
 	.4byte gFieldEffectScript_HotSpringsWater
@@ -128,6 +131,10 @@ gFieldEffectScript_BikeHopTallGrass:: @ 82DBB38
 gFieldEffectScript_SandFootprints:: @ 82DBB42
 	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_SandFootprints
 	field_eff_end
+	
+gFieldEffectScript_SnowFootprints:: @ 82DBB42
+	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_SnowFootprints
+	field_eff_end
 
 gFieldEffectScript_BikeHopBigSplash:: @ 82DBB4C
 	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_JumpBigSplash
@@ -171,6 +178,10 @@ gFieldEffectScript_BerryTreeGrowthSparkle:: @ 82DBBA6
 
 gFieldEffectScript_DeepSandFootprints:: @ 82DBBAC
 	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_DeepSandFootprints
+	field_eff_end
+
+gFieldEffectScript_DeepSnowFootprints:: @ 82DBBAC
+	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_DeepSnowFootprints
 	field_eff_end
 
 gFieldEffectScript_PokeCenterHeal:: @ 82DBBB6
@@ -236,6 +247,10 @@ gFieldEffectScript_UseDig:: @ 82DBC1B
 
 gFieldEffectScript_SandPile:: @ 82DBC21
 	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_SandPile
+	field_eff_end
+
+gFieldEffectScript_SnowPile:: @ 82DBC21
+	field_eff_loadfadedpal_callnative gFieldEffectObjectPaletteInfo0, FldEff_SnowPile
 	field_eff_end
 
 gFieldEffectScript_ShortGrass:: @ 82DBC2B

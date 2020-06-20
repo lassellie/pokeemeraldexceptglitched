@@ -77,6 +77,7 @@ static void GetGroundEffectFlags_Reflection(struct EventObject*, u32*);
 static void GetGroundEffectFlags_TallGrassOnSpawn(struct EventObject*, u32*);
 static void GetGroundEffectFlags_LongGrassOnSpawn(struct EventObject*, u32*);
 static void GetGroundEffectFlags_SandHeap(struct EventObject*, u32*);
+static void GetGroundEffectFlags_SnowHeap(struct EventObject*, u32*);
 static void GetGroundEffectFlags_ShallowFlowingWater(struct EventObject*, u32*);
 static void GetGroundEffectFlags_ShortGrass(struct EventObject*, u32*);
 static void GetGroundEffectFlags_HotSprings(struct EventObject*, u32*);
@@ -1544,6 +1545,7 @@ static void sub_808E38C(struct EventObject *eventObject)
     eventObject->inShortGrass = FALSE;
     eventObject->inShallowFlowingWater = FALSE;
     eventObject->inSandPile = FALSE;
+	eventObject->inSnowPile = FALSE;
     eventObject->inHotSprings = FALSE;
     EventObjectClearHeldMovement(eventObject);
 }
@@ -7192,6 +7194,7 @@ static void GetAllGroundEffectFlags_OnSpawn(struct EventObject *eventObj, u32 *f
     GetGroundEffectFlags_TallGrassOnSpawn(eventObj, flags);
     GetGroundEffectFlags_LongGrassOnSpawn(eventObj, flags);
     GetGroundEffectFlags_SandHeap(eventObj, flags);
+	GetGroundEffectFlags_SnowHeap(eventObj, flags);
     GetGroundEffectFlags_ShallowFlowingWater(eventObj, flags);
     GetGroundEffectFlags_ShortGrass(eventObj, flags);
     GetGroundEffectFlags_HotSprings(eventObj, flags);
@@ -7206,6 +7209,7 @@ static void GetAllGroundEffectFlags_OnBeginStep(struct EventObject *eventObj, u3
     GetGroundEffectFlags_Tracks(eventObj, flags);
 	GetGroundEffectFlags_Tracks2(eventObj, flags);
     GetGroundEffectFlags_SandHeap(eventObj, flags);
+	GetGroundEffectFlags_SnowHeap(eventObj, flags);
     GetGroundEffectFlags_ShallowFlowingWater(eventObj, flags);
     GetGroundEffectFlags_Puddle(eventObj, flags);
     GetGroundEffectFlags_ShortGrass(eventObj, flags);
@@ -7217,6 +7221,7 @@ static void GetAllGroundEffectFlags_OnFinishStep(struct EventObject *eventObj, u
     EventObjectUpdateMetatileBehaviors(eventObj);
     GetGroundEffectFlags_ShallowFlowingWater(eventObj, flags);
     GetGroundEffectFlags_SandHeap(eventObj, flags);
+	GetGroundEffectFlags_SnowHeap(eventObj, flags);
     GetGroundEffectFlags_Puddle(eventObj, flags);
     GetGroundEffectFlags_Ripple(eventObj, flags);
     GetGroundEffectFlags_ShortGrass(eventObj, flags);
@@ -7316,6 +7321,24 @@ static void GetGroundEffectFlags_SandHeap(struct EventObject *eventObj, u32 *fla
     else
     {
         eventObj->inSandPile = 0;
+    }
+}
+
+static void GetGroundEffectFlags_SnowHeap(struct EventObject *eventObj, u32 *flags)
+{
+    if (MetatileBehavior_IsDeepSnow(eventObj->currentMetatileBehavior)
+        && MetatileBehavior_IsDeepSnow(eventObj->previousMetatileBehavior))
+    {
+        if (!eventObj->inSnowPile)
+        {
+            eventObj->inSnowPile = 0;
+            eventObj->inSnowPile = 1;
+            *flags |= GROUND_EFFECT_FLAG_SNOW_PILE;
+        }
+    }
+    else
+    {
+        eventObj->inSnowPile = 0;
     }
 }
 
@@ -7704,7 +7727,19 @@ void GroundEffect_SandTracks(struct EventObject *eventObj, struct Sprite *sprite
     sGroundEffectTracksFuncs[info->tracks](eventObj, sprite, 0);
 }
 
+void GroundEffect_SnowTracks(struct EventObject *eventObj, struct Sprite *sprite)
+{
+    const struct EventObjectGraphicsInfo *info = GetEventObjectGraphicsInfo(eventObj->graphicsId);
+    sGroundEffectTracksFuncs[info->tracks](eventObj, sprite, 0);
+}
+
 void GroundEffect_DeepSandTracks(struct EventObject *eventObj, struct Sprite *sprite)
+{
+    const struct EventObjectGraphicsInfo *info = GetEventObjectGraphicsInfo(eventObj->graphicsId);
+    sGroundEffectTracksFuncs[info->tracks](eventObj, sprite, 1);
+}
+
+void GroundEffect_DeepSnowTracks(struct EventObject *eventObj, struct Sprite *sprite)
 {
     const struct EventObjectGraphicsInfo *info = GetEventObjectGraphicsInfo(eventObj->graphicsId);
     sGroundEffectTracksFuncs[info->tracks](eventObj, sprite, 1);
@@ -7728,6 +7763,22 @@ static void DoTracksGroundEffect_Footprints(struct EventObject *eventObj, struct
     gFieldEffectArguments[3] = 2;
     gFieldEffectArguments[4] = eventObj->facingDirection;
     FieldEffectStart(sandFootprints_FieldEffectData[a]);
+}
+
+static void DoTracksGroundEffect_SnowFootprints(struct EventObject *eventObj, struct Sprite *sprite, u8 a)
+{
+    // First half-word is a Field Effect script id. (gFieldEffectScriptPointers)
+    u16 snowFootprints_FieldEffectData[2] = {
+        FLDEFF_SNOW_FOOTPRINTS,
+        FLDEFF_DEEP_SNOW_FOOTPRINTS
+    };
+
+    gFieldEffectArguments[0] = eventObj->previousCoords.x;
+    gFieldEffectArguments[1] = eventObj->previousCoords.y;
+    gFieldEffectArguments[2] = 149;
+    gFieldEffectArguments[3] = 2;
+    gFieldEffectArguments[4] = eventObj->facingDirection;
+    FieldEffectStart(snowFootprints_FieldEffectData[a]);
 }
 
 static void DoTracksGroundEffect_BikeTireTracks(struct EventObject *eventObj, struct Sprite *sprite, u8 a)
@@ -7770,6 +7821,11 @@ void GroundEffect_StepOnPuddle(struct EventObject *eventObj, struct Sprite *spri
 void GroundEffect_SandHeap(struct EventObject *eventObj, struct Sprite *sprite)
 {
     StartFieldEffectForEventObject(FLDEFF_SAND_PILE, eventObj);
+}
+
+void GroundEffect_SnowHeap(struct EventObject *eventObj, struct Sprite *sprite)
+{
+    StartFieldEffectForEventObject(FLDEFF_SNOW_PILE, eventObj);
 }
 
 void GroundEffect_JumpOnTallGrass(struct EventObject *eventObj, struct Sprite *sprite)
@@ -7859,6 +7915,7 @@ static void (*const sGroundEffectFuncs[])(struct EventObject *eventObj, struct S
     GroundEffect_Ripple,
     GroundEffect_StepOnPuddle,
     GroundEffect_SandHeap,
+	GroundEffect_SnowHeap,
     GroundEffect_JumpOnTallGrass,
     GroundEffect_JumpOnLongGrass,
     GroundEffect_JumpOnShallowWater,
@@ -7887,11 +7944,13 @@ void filters_out_some_ground_effects(struct EventObject *eventObj, u32 *flags)
     {
         eventObj->inShortGrass = 0;
         eventObj->inSandPile = 0;
+		eventObj->inSnowPile = 0;
         eventObj->inShallowFlowingWater = 0;
         eventObj->inHotSprings = 0;
         *flags &= ~(GROUND_EFFECT_FLAG_HOT_SPRINGS
                   | GROUND_EFFECT_FLAG_SHORT_GRASS
                   | GROUND_EFFECT_FLAG_SAND_PILE
+				  | GROUND_EFFECT_FLAG_SNOW_PILE
                   | GROUND_EFFECT_FLAG_SHALLOW_FLOWING_WATER
                   | GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE);
     }

@@ -614,9 +614,6 @@
 #define MAP_SPLENDALEHOUSE   (5 | (34 << 8))
 #define MAP_SPLENDALEHOUSE2F (6 | (34 << 8))
 
-//Map Group 37 (Just to make sure there is space for other groups)
-#define MAP_ROUTE6           (0 | (34 << 8))
-
-#define MAP_GROUPS_COUNT 36
+#define MAP_GROUPS_COUNT 35
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
