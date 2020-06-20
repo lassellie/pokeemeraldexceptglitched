@@ -51,7 +51,6 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     &gFieldEffectObjectTemplate_GroundImpactDust,
     &gFieldEffectObjectTemplate_BikeHopTallGrass,
     &gFieldEffectObjectTemplate_SandFootprints,
-	&gFieldEffectObjectTemplate_SnowFootprints,
     &gFieldEffectObjectTemplate_BikeHopBigSplash,
     &gFieldEffectObjectTemplate_Splash,
     &gFieldEffectObjectTemplate_BikeHopSmallSplash,
@@ -64,7 +63,6 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     &gFieldEffectObjectTemplate_Unknown21,
     &gFieldEffectObjectTemplate_BerryTreeGrowthSparkle,
     &gFieldEffectObjectTemplate_DeepSandFootprints,
-	&gFieldEffectObjectTemplate_DeepSnowFootprints,
     &gFieldEffectObjectTemplate_TreeDisguise,
     &gFieldEffectObjectTemplate_MountainDisguise,
     &gFieldEffectObjectTemplate_Bird,
@@ -78,4 +76,6 @@ const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[] = {
     &gFieldEffectObjectTemplate_Bubbles,
     &gFieldEffectObjectTemplate_Unknown35,
     &gFieldEffectObjectTemplate_Rayquaza,
+	&gFieldEffectObjectTemplate_SnowFootprints,
+	&gFieldEffectObjectTemplate_DeepSnowFootprints,
 };

@@ -95,6 +95,7 @@ static void InitObjectPriorityByZCoord(struct Sprite *sprite, u8 z);
 static void EventObjectUpdateSubpriority(struct EventObject*, struct Sprite*);
 static void DoTracksGroundEffect_None(struct EventObject*, struct Sprite*, u8);
 static void DoTracksGroundEffect_Footprints(struct EventObject*, struct Sprite*, u8);
+static void DoTracksGroundEffect_SnowFootprints(struct EventObject*, struct Sprite*, u8);
 static void DoTracksGroundEffect_BikeTireTracks(struct EventObject*, struct Sprite*, u8);
 static void DoRippleFieldEffect(struct EventObject*, struct Sprite*);
 static void DoGroundEffects_OnSpawn(struct EventObject*, struct Sprite*);
@@ -481,7 +482,7 @@ const struct SpritePalette sEventObjectSpritePalettes[] = {
     {gEventObjectPalette33, EVENT_OBJ_PAL_TAG_33},
     {gEventObjectPalette34, EVENT_OBJ_PAL_TAG_34},
 	{gEventObjectPalette35, EVENT_OBJ_PAL_TAG_35},
-	{gEventObjectPalette35, EVENT_OBJ_PAL_TAG_36},
+	{gEventObjectPalette36, EVENT_OBJ_PAL_TAG_36},
     {NULL,                  0x0000},
 };
 
@@ -7718,6 +7719,7 @@ void GroundEffect_FlowingWater(struct EventObject *eventObj, struct Sprite *spri
 static void (*const sGroundEffectTracksFuncs[])(struct EventObject *eventObj, struct Sprite *sprite, u8 a) = {
     DoTracksGroundEffect_None,
     DoTracksGroundEffect_Footprints,
+	DoTracksGroundEffect_SnowFootprints,
     DoTracksGroundEffect_BikeTireTracks,
 };
 
@@ -7911,7 +7913,9 @@ static void (*const sGroundEffectFuncs[])(struct EventObject *eventObj, struct S
     GroundEffect_IceReflection,
     GroundEffect_FlowingWater,
     GroundEffect_SandTracks,
+	GroundEffect_SnowTracks,
     GroundEffect_DeepSandTracks,
+	GroundEffect_DeepSnowTracks,
     GroundEffect_Ripple,
     GroundEffect_StepOnPuddle,
     GroundEffect_SandHeap,
